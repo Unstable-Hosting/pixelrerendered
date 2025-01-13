@@ -1,10 +1,38 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import "./index.css";
+import App from "./App.jsx";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const removePreloader = () => {
+  const preloader = document.getElementById("preloader");
+  if (preloader) {
+    // preloader.style.backgroundColor = "transparent";
+    preloader.style.opacity = "0";
+    // setTimeout(() => preloader.remove(), 500);
+    preloader.remove();
+  }
+};
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/test",
+        element: <div>Test</div>,
+      },
+    ],
+  },
+]);
+
+window.onload = () => {
+  removePreloader();
+};
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
