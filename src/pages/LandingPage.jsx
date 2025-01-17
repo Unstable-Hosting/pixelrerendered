@@ -1,24 +1,48 @@
-import React, { useEffect, useState } from "react";
-import Loader from "../components/Loader.jsx";
+import React, { useState, useEffect } from "react";
+import "../css/LandingPage.css";
+import Pixels from "../assets/logo.png";
+import CountDownTimer from "../components/CountDownTimer.jsx";
+import TextScramble from "../components/TextScramble.jsx";
+import Timer from "../components/Timer.jsx";
 
-function LandingPage() {
-  // const [loading, setLoading] = useState(true);
+const LandingPage = () => {
+  const phrases = [
+    "REIGNITING",
+    "SPARK",
+    "PIXELS",
+    "REIGNITING THE SPARK",
+    "Back to the Future",
+  ];
 
-  useEffect(() => {
-    // setTimeout(() => {
-    //   setLoading(false);
-    // }, 3000);
-  }, []);
   return (
-    <div className="h-screen bg-gray-900 flex items-center justify-center">
-      <div className="text-center text-white p-6">
-        <h1 className="text-4xl font-bold mb-4">Maintenance Mode</h1>
-        <p className="text-lg text-gray-300">
-          We apologize for any inconvenience. Please check back later.
-        </p>
+    <div className="landing-page">
+      <div className="main-content">
+        <div className="logo-container">
+          <img src={Pixels} alt="Pixels_Logo" />
+        </div>
+        <div className="text-container">
+          <h1 className="glitch" data-text="RERENDERED">
+            RERENDERED
+          </h1>
+          {/* <h2 className="glitch">REIGNITING THE SPARK</h2> */}
+          <TextScramble phrases={phrases} />
+        </div>
+        <Timer />
+        <div className="button-container">
+          <button className="btn">
+            <a href="#">Meet the Team</a>
+          </button>
+        </div>
+      </div>
+
+      <div className="corner-titles">
+        <div className="corner-title top-left">About</div>
+        <div className="corner-title top-right">Events</div>
+        <div className="corner-title bottom-left">Sponsors</div>
+        <div className="corner-title bottom-right">Contact</div>
       </div>
     </div>
   );
-}
+};
 
 export default LandingPage;

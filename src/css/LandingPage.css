@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "Blanka";
+  src: url("../fonts/Blanka-Regular.otf");
+}
+
+@font-face {
+  font-family: "Mokoto";
+  src: url("../fonts/mokoto-mokoto-regular-glitch-mark-1-400.otf");
+}
+
+.landing-page {
+  background-image: url("../assets/cyberneon.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.main-content {
+  z-index: 2;
+  position: absolute;
+  /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.landing-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.259
+  ); /* Adjust opacity here (0.6 = 60% dim) */
+  z-index: 1;
+}
+
+.logo-container {
+  width: 100%;
+  max-width: clamp(2rem, 12vw, 10rem);
+  height: auto;
+  margin: 0 auto;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.text-container h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: 0.2rem;
+  color: #ffffff;
+  font-family: "Blanka";
+  text-shadow: 0 0 10px rgb(204 69 69 / 80%), 0 0 20px rgb(180 21 21 / 80%),
+    0 0 30px rgb(228 32 32 / 60%), 0 0 40px rgba(255, 255, 255, 0.4);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.text-container h2 {
+  font-size: clamp(1rem, 3vw, 2rem);
+  color: #ffffff;
+  font-family: "Mokoto";
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.corner-titles {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.date {
+  z-index: 2;
+  text-align: center;
+  bottom: 1rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: "Blanka";
+}
+
+.corner-title {
+  position: absolute;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  pointer-events: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  transition: transform 0.1s ease-in-out;
+}
+
+.corner-title:hover {
+  transform: scale(1.1);
+}
+
+.top-left {
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.top-right {
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.bottom-left {
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+.bottom-right {
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .text-container h1 {
+    font-size: 3.5rem;
+  }
+  .corner-title {
+    padding: 0.75rem;
+    font-size: 1.3rem;
+  }
+
+  .top-left {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  .top-right {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  .bottom-left {
+    bottom: 0.5rem;
+    left: 1rem;
+  }
+  .bottom-right {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .logo-container {
+    max-width: clamp(6rem, 15vw, 12rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-container {
+    max-width: clamp(8rem, 16vw, 15rem);
+  }
+}
+
+.countdown {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  /* padding: .2rem 0; */
+  margin: 0;
+  color: #fff;
+  width: 100%;
+}
+
+.countdown li {
+  flex: 1;
+  text-align: center;
+}
+
+.countdown .number {
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  font-weight: bold;
+  font-family: "Blanka";
+  margin-bottom: 0.5rem;
+}
+
+.countdown .label {
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+  color: #adafb2;
+  text-transform: uppercase;
+  font-family: "Blanka";
+}
+
+/* Add responsive adjustments */
+@media (max-width: 768px) {
+  .countdown {
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown {
+    gap: 0.5rem;
+    padding: 1rem 0;
+    width: 90%;
+  }
+}
+
+.btn {
+  margin-top: 2rem;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  box-shadow: 6px -6px 0px rgb(255, 255, 255);
+}
+
+.btn:hover {
+  box-shadow: 2px -1px 0px rgb(255, 255, 255);
+  transition: 0.5s;
+}

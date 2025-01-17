@@ -10,7 +10,8 @@ function App() {
   }, []);
 
   return (
-    <section className="w-full flex-box flex-col">
+    // <section className="w-full flex-box flex-col">
+    <section className="App w-[] h-[100vh]">
       {pathname === "/" ? <LandingPage /> : <Outlet />}
     </section>
   );
