@@ -11,7 +11,7 @@ const CountDownTimer = () => {
 
   useEffect(() => {
     // Fix the target date format - note that months are 0-based in JavaScript
-    const targetDate = new Date("2025-01-18T00:36:00"); // February 18, 2025, 24:22:00
+    const targetDate = new Date("2025-02-28T05:30:00Z"); // February 18, 2025, 24:22:00
 
     const calculateTimeLeft = () => {
       const now = new Date().getTime();
