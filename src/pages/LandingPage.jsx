@@ -25,7 +25,7 @@ const LandingPage = () => {
             RERENDERED
           </h1>
           {/* <h2 className="glitch">REIGNITING THE SPARK</h2> */}
-          <TextScramble phrases={phrases} />
+          {/* <TextScramble phrases={phrases} /> */}
         </div>
         <Timer />
         <div className="button-container">
