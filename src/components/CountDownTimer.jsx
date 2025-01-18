@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import confetti from 'canvas-confetti';
 
 const CountDownTimer = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -9,60 +10,77 @@ const CountDownTimer = () => {
   });
 
   useEffect(() => {
-    // Set your target date here
-    const targetDate = new Date("2025-01-18T23:59:59"); // Example: Dec 31, 2024
+    // Fix the target date format - note that months are 0-based in JavaScript
+    const targetDate = new Date("2025-01-18T00:36:00"); // February 18, 2025, 24:22:00
 
     const calculateTimeLeft = () => {
-      const now = new Date();
-      const difference = targetDate - now;
+      const now = new Date().getTime();
+      const target = targetDate.getTime();
+      const difference = target - now;
 
       if (difference > 0) {
+        // Calculate time units
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((difference / 1000 / 60) % 60);
-        const seconds = Math.floor((difference / 1000) % 60);
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
         setTimeLeft({ days, hours, minutes, seconds });
+      } else {
+        // Timer completed
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        
+        // Fire confetti
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.9 },
+          colors: ['#FF00FF', '#00FFFF', '#FF69B4', '#4169E1']
+        });
+        
+        // Clear the interval when done
+        return true;
       }
+      return false;
     };
+
     // Calculate immediately
-    calculateTimeLeft();
+    const isDone = calculateTimeLeft();
+    if (isDone) return;
 
-    // Update every second
-    const timer = setInterval(calculateTimeLeft, 1000);
+    // Set up the interval
+    const timerId = setInterval(() => {
+      const isDone = calculateTimeLeft();
+      if (isDone) {
+        clearInterval(timerId);
+      }
+    }, 1000);
 
-    // Cleanup interval on component unmount
-    return () => clearInterval(timer);
-  }, []);
+    // Cleanup
+    return () => clearInterval(timerId);
+  }, []); // Empty dependency array since we don't need to recreate the effect
 
   return (
-    <div>
-      <ul className="countdown">
-        <li>
-          <div className="number">
-            {timeLeft.days.toString().padStart(2, "0")}
-          </div>
-          <div className="label">Days</div>
-        </li>
-        <li>
-          <div className="number">
-            {timeLeft.hours.toString().padStart(2, "0")}
-          </div>
-          <div className="label">Hours</div>
-        </li>
-        <li>
-          <div className="number">
-            {timeLeft.minutes.toString().padStart(2, "0")}
-          </div>
-          <div className="label">Minutes</div>
-        </li>
-        <li>
-          <div className="number">
-            {timeLeft.seconds.toString().padStart(2, "0")}
-          </div>
-          <div className="label">Seconds</div>
-        </li>
-      </ul>
+    <div className="w-full flex items-center justify-center">
+      <div className="">
+        <ul className="countdown">
+          {[
+            { value: timeLeft.days, label: "DAYS" },
+            { value: timeLeft.hours, label: "HOURS" },
+            { value: timeLeft.minutes, label: "MINUTES" },
+            { value: timeLeft.seconds, label: "SECONDS" }
+          ].map((item, index) => (
+            <li key={index} className="flex flex-col items-center">
+              <div className="number text-7xl font-bold text-white font-mono">
+                {item.value.toString().padStart(2, "0")}
+              </div>
+              <div className="label mt-2 text-cyan-400 font-mono tracking-widest text-sm">
+                {item.label}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
