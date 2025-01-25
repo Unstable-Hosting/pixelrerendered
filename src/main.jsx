@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
+import LandingPage from "./pages/LandingPage";
+import DynamicEventsPage from "./components/DynamicEventsPage/DynamicEventsPage";
 
 const removePreloader = () => {
   const preloader = document.getElementById("preloader");
   if (preloader) {
-    // preloader.style.backgroundColor = "transparent";
     preloader.style.opacity = "0";
-    // setTimeout(() => preloader.remove(), 500);
     preloader.remove();
   }
 };
@@ -20,16 +20,18 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/test",
-        element: <div>Test</div>,
+        index: true,
+        element: <LandingPage />,
+      },
+      {
+        path: "events/:title",
+        element: <DynamicEventsPage />,
       },
     ],
   },
 ]);
 
-window.onload = () => {
-  removePreloader();
-};
+window.onload = removePreloader;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

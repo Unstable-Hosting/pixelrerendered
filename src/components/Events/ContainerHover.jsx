@@ -1,8 +1,10 @@
 import React from 'react'
 import EventContainer from './EventsContainer';
 import styles from '../../css/events';
+import { useNavigate } from 'react-router-dom';
 
 const ContainerHover = () => {
+    const navigate = useNavigate();
     const cardData = [
         { 
           title: 'Technical Events'  ,  
@@ -32,7 +34,7 @@ const ContainerHover = () => {
       ];
 
       const handleCardClick = (title) => {
-        navigate(`/dynamic/${encodeURIComponent(title)}`); // Redirect to the Dynamic Page with title
+        navigate(`/events/${encodeURIComponent(title)}`); // Redirect to the Dynamic Page with title
       };
   
       return (
