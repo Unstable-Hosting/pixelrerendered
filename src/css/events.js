@@ -8,28 +8,27 @@ const styles = {
       fontFamily: 'Arial, sans-serif'
     },
     cardWrap: {
-      margin: '10px',
+      margin: '20px',
       transformStyle: 'preserve-3d',
       cursor: 'pointer',
       transition: 'transform 0.3s ease',
-      '&:hover': {
-        transform: 'scale(1.05)'
-      }
     },
     card: {
       position: 'relative',
-      width: '240px',
-      height: '320px',
+      width: '300px',
+      height: '400px',
       backgroundColor: '#333',
       overflow: 'hidden',
       borderRadius: '10px',
       transition: 'all 0.3s ease-out',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      border: '2px solid rgba(255, 255, 255, 0.8)',
+      boxShadow: '0 0 15px rgba(255, 255, 255, 0.3)'
     },
     cardBg: {
       position: 'absolute',
-      top: '-20px',
-      left: '-20px',
+      top: 0,
+      left: 0,
       width: '100%',
       height: '100%',
       backgroundRepeat: 'no-repeat',
@@ -38,7 +37,7 @@ const styles = {
       transition: 'all 0.3s ease-out'
     },
     cardInfo: {
-      padding: '20px',
+      padding: '25px',
       position: 'absolute',
       bottom: 0,
       color: '#fff',
@@ -47,13 +46,13 @@ const styles = {
       transition: 'all 0.3s ease-out'
     },
     cardInfoTitle: {
-      fontSize: '28px',
-      margin: '0 0 10px 0',
+      fontSize: '32px',
+      margin: '0 0 12px 0',
       textShadow: 'rgba(0, 0, 0, 0.5) 0 3px 5px'
     },
     cardInfoDescription: {
-      fontSize: '14px',
-      lineHeight: '1.4',
+      fontSize: '16px',
+      lineHeight: '1.5',
       margin: 0,
       transition: 'opacity 0.3s ease-out'
     }

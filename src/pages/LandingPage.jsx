@@ -16,18 +16,20 @@ const LandingPage = () => {
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('main-container');
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleScroll = (e, id) => {
+  const handleNavClick = (e, id) => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setActiveSection(id);
+      setIsMenuOpen(false);
     }
-    setIsMenuOpen(false); // Close menu after clicking
   };
 
   return (
@@ -38,26 +40,44 @@ const LandingPage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
               {/* Logo/Home */}
-              <a href="/" className="text-white hover:text-gray-300 transition-colors text-xl">
+              <a 
+                href="/" 
+                onClick={(e) => handleNavClick(e, 'main-container')}
+                className={`text-white hover:text-gray-300 transition-colors text-xl font-['Work_Sans'] font-bold nav-link ${
+                  activeSection === 'main-container' ? 'active' : ''
+                }`}
+              >
                 PIXELS
               </a>
 
               {/* Desktop Menu */}
               <div className="hidden md:flex items-center space-x-8">
-                <a href="#about" onClick={(e) => handleScroll(e, 'about-container')} 
-                   className="text-white hover:text-gray-300 transition-colors text-xl">
+                <a href="#about" 
+                   onClick={(e) => handleNavClick(e, 'about-container')} 
+                   className={`nav-link text-white hover:text-gray-300 transition-colors text-xl font-['Work_Sans'] font-bold ${
+                     activeSection === 'about-container' ? 'active' : ''
+                   }`}>
                   About
                 </a>
-                <a onClick={(e) => handleScroll(e, 'Events-container')} 
-                   className="text-white hover:text-gray-300 transition-colors text-xl cursor-pointer">
+                <a href="#events"
+                   onClick={(e) => handleNavClick(e, 'Events-container')} 
+                   className={`nav-link text-white hover:text-gray-300 transition-colors text-xl font-['Work_Sans'] font-bold cursor-pointer ${
+                     activeSection === 'Events-container' ? 'active' : ''
+                   }`}>
                   Events
                 </a>
-                <a href="#sponsors" onClick={(e) => handleScroll(e, 'sponsors-container')} 
-                   className="text-white hover:text-gray-300 transition-colors text-xl">
+                <a href="#sponsors" 
+                   onClick={(e) => handleNavClick(e, 'sponsors-container')} 
+                   className={`nav-link text-white hover:text-gray-300 transition-colors text-xl font-['Work_Sans'] font-bold ${
+                     activeSection === 'sponsors-container' ? 'active' : ''
+                   }`}>
                   Sponsors
                 </a>
-                <a href="#contact" onClick={(e) => handleScroll(e, 'contact-container')} 
-                   className="text-white hover:text-gray-300 transition-colors text-xl">
+                <a href="#contact" 
+                   onClick={(e) => handleNavClick(e, 'contact-container')} 
+                   className={`nav-link text-white hover:text-gray-300 transition-colors text-xl font-['Work_Sans'] font-bold ${
+                     activeSection === 'contact-container' ? 'active' : ''
+                   }`}>
                   Contact
                 </a>
               </div>
@@ -100,28 +120,28 @@ const LandingPage = () => {
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/40 rounded-lg mt-2">
                   <a
                     href="#about"
-                    onClick={(e) => handleScroll(e, 'about-container')}
-                    className="text-white hover:text-gray-300 block px-3 py-2 text-base font-medium transition-colors"
+                    onClick={(e) => handleNavClick(e, 'about-container')}
+                    className="text-white hover:text-gray-300 block px-3 py-2 text-base font-['Work_Sans'] font-bold transition-colors"
                   >
                     About
                   </a>
                   <a
-                    onClick={(e) => handleScroll(e, 'Events-container')}
-                    className="text-white hover:text-gray-300 block px-3 py-2 text-base font-medium transition-colors cursor-pointer"
+                    onClick={(e) => handleNavClick(e, 'Events-container')}
+                    className="text-white hover:text-gray-300 block px-3 py-2 text-base font-['Work_Sans'] font-bold transition-colors cursor-pointer"
                   >
                     Events
                   </a>
                   <a
                     href="#sponsors"
-                    onClick={(e) => handleScroll(e, 'sponsors-container')}
-                    className="text-white hover:text-gray-300 block px-3 py-2 text-base font-medium transition-colors"
+                    onClick={(e) => handleNavClick(e, 'sponsors-container')}
+                    className="text-white hover:text-gray-300 block px-3 py-2 text-base font-['Work_Sans'] font-bold transition-colors"
                   >
                     Sponsors
                   </a>
                   <a
                     href="#contact"
-                    onClick={(e) => handleScroll(e, 'contact-container')}
-                    className="text-white hover:text-gray-300 block px-3 py-2 text-base font-medium transition-colors"
+                    onClick={(e) => handleNavClick(e, 'contact-container')}
+                    className="text-white hover:text-gray-300 block px-3 py-2 text-base font-['Work_Sans'] font-bold transition-colors"
                   >
                     Contact
                   </a>

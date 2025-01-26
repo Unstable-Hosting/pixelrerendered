@@ -9,7 +9,7 @@ const ContainerHover = () => {
         { 
           title: 'Technical Events'  ,  
           description: 'Explore the majestic landscapes of deep geological wonders.',
-          backgroundImage: 'https://picsum.photos/240/320?random=1'
+          backgroundImage: 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnJrN3MxdTk5ZGppczJyNXhmY3JkZzM3OWFtNGIyNzl6czc3Z3BvcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.gif'
         },
         { 
           title: 'Non-Technical', 
@@ -24,7 +24,7 @@ const ContainerHover = () => {
         { 
           title: 'Sports', 
           description: 'Witness the beauty of ancient and towering forests.',
-          backgroundImage: 'https://picsum.photos/240/320?random=3'
+          backgroundImage: 'https://i.pinimg.com/originals/22/dc/02/22dc02c55c76190ad9deed1e5c81426b.gif'
         },
         { 
           title: 'E-Sports', 
