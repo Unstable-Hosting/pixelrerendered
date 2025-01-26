@@ -33,7 +33,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       {/* Hero Section */}
-      <div className="main-content" id="about-container">
+      <div className="main-content h-screen w-full flex flex-col justify-center items-center" id="main-container">
         <nav className="fixed top-0 left-0 w-full z-50 bg-black/20 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
@@ -130,23 +130,23 @@ const LandingPage = () => {
             )}
           </div>
         </nav>
-        <div className="Hero-Section">
-        <div className="logo-container">
-          <img src={Pixels} alt="Pixels_Logo" />
-        </div>
-        <div className="text-container">
-          <h1 className="glitch" data-text="RERENDERED">
-            RERENDERED
-          </h1>
-          {/* <h2 className="glitch">REIGNITING THE SPARK</h2> */}
-          <TextScramble phrases={phrases} />
-        </div>
-        <Timer />
-        <div className="button-container">
-          <button className="btn">
-            <a href="#">Meet the Team</a>
-          </button>
-        </div>
+        <div className="Hero-Section flex flex-col items-center justify-center flex-grow">
+          <div className="logo-container">
+            <img src={Pixels} alt="Pixels_Logo" />
+          </div>
+          <div className="text-container">
+            <h1 className="glitch" data-text="RERENDERED">
+              RERENDERED
+            </h1>
+            {/* <h2 className="glitch">REIGNITING THE SPARK</h2> */}
+            <TextScramble phrases={phrases} />
+          </div>
+          <Timer />
+          <div className="button-container">
+            <button className="btn">
+              <a href="#">Meet the Team</a>
+            </button>
+          </div>
         </div>
       </div>
 

@@ -24,11 +24,10 @@
   background-repeat: no-repeat;
   z-index: 2;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 5rem;
@@ -51,7 +50,11 @@
 }
 
 .Hero-Section {
- z-index: 2;
+  width: 100%;
+  padding: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 2;
 }
 
 .logo-container {

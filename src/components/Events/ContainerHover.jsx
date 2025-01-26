@@ -29,7 +29,7 @@ const ContainerHover = () => {
         { 
           title: 'E-Sports', 
           description: 'Witness the beauty of ancient and towering forests.',
-          backgroundImage: 'https://picsum.photos/240/320?random=3'
+          backgroundImage: 'https://i.gifer.com/3PtI.gif'
         },
       ];
 
