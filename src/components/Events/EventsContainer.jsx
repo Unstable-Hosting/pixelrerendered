@@ -19,6 +19,11 @@ const EventContainer = ({ title, description, backgroundImage, handleClick }) =>
     setMousePosition({ x: 0, y: 0 });
   };
 
+  const handleCardClick = (e) => {
+    e.preventDefault();
+    handleClick();
+  };
+
   const cardStyle = {
     transform: `
       perspective(800px) 
@@ -46,7 +51,9 @@ const EventContainer = ({ title, description, backgroundImage, handleClick }) =>
       style={styles.cardWrap}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      onClick={handleClick}
+      onClick={handleCardClick}
+      role="button"
+      tabIndex={0}
     >
       <div 
         ref={cardRef} 

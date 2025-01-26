@@ -10,7 +10,11 @@ const styles = {
     cardWrap: {
       margin: '10px',
       transformStyle: 'preserve-3d',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      transition: 'transform 0.3s ease',
+      '&:hover': {
+        transform: 'scale(1.05)'
+      }
     },
     card: {
       position: 'relative',
@@ -19,7 +23,8 @@ const styles = {
       backgroundColor: '#333',
       overflow: 'hidden',
       borderRadius: '10px',
-      transition: 'all 0.3s ease-out'
+      transition: 'all 0.3s ease-out',
+      cursor: 'pointer'
     },
     cardBg: {
       position: 'absolute',

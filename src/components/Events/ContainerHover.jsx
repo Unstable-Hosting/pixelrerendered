@@ -34,7 +34,8 @@ const ContainerHover = () => {
       ];
 
       const handleCardClick = (title) => {
-        navigate(`/events/${encodeURIComponent(title)}`); // Redirect to the Dynamic Page with title
+        console.log('Navigating to:', `/events/${encodeURIComponent(title)}`); // Add this for debugging
+        navigate(`/events/${encodeURIComponent(title)}`);
       };
   
       return (

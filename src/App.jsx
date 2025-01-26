@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <section className="App w-[100%] h-[100vh]">
+    <section className="App w-[100%] h-[100%]">
       <Outlet />
     </section>
   );
