@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+
 @font-face {
   font-family: "Blanka";
   src: url("../fonts/Blanka-Regular.otf");
@@ -263,4 +265,50 @@
 .btn:hover {
   box-shadow: 2px -1px 0px rgb(255, 255, 255);
   transition: 0.5s;
+}
+
+/* Navbar Styles */
+.nav-link {
+  position: relative;
+  padding-bottom: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(185, 25, 148);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgb(185, 25, 148),
+              0 0 20px rgb(185, 25, 148),
+              0 0 30px rgb(185, 25, 148);
+}
+
+.nav-link:hover {
+  color: rgb(16, 62, 147) !important;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+  transform-origin: top;
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
 }
