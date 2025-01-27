@@ -16,26 +16,12 @@ const LandingPage = () => {
     "Back to the Future",
   ];
 
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // const toggleMenu = () => {
-  //   setIsMenuOpen(!isMenuOpen);
-  // };
-
-  // const handleScroll = (e, id) => {
-  //   e.preventDefault();
-  //   const element = document.getElementById(id);
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  //   setIsMenuOpen(false); // Close menu after clicking
-  // };
 
   return (
     <div className="landing-page">
       <div className="main-content h-screen w-full flex flex-col justify-center items-center" id="main-container">
         {/* NavBar */}
-        <NavBar />
+        {/* <NavBar /> */}
         {/* NavBar */}
 
         {/* Hero Section */}
