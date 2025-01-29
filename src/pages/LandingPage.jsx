@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/LandingPage.css";
+import { Link } from "react-router-dom";
 import Pixels from "../assets/logo.png";
 import CountDownTimer from "../components/Hero/CountDownTimer.jsx";
 import TextScramble from "../components/Hero/TextScramble.jsx";
@@ -38,7 +39,7 @@ const LandingPage = () => {
           <Timer />
           <div className="button-container">
             <button className="btn">
-              <a href="#">Meet the Team</a>
+            <Link to="/meet-the-team">Meet the Team</Link> 
             </button>
           </div>
         </div>

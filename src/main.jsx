@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import LandingPage from "./pages/LandingPage";
 import DynamicEventsPage from "./components/DynamicEventsPage/DynamicEventsPage";
+import MeetTheTeam from "./components/MeetTheTeam.jsx"; // Import the new component
 
 const removePreloader = () => {
   const preloader = document.getElementById("preloader");
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "events/:title",
         element: <DynamicEventsPage />,
+      },
+      {
+        path: "meet-the-team", // New route for "Meet the Team"
+        element: <MeetTheTeam />,
       },
     ],
   },
