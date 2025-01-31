@@ -8,29 +8,6 @@ const DynamicEventsPage = () => {
   const [loading, setLoading] = useState(true);
   const [eventDetails, setEventDetails] = useState(null);
 
-  // const eventData = [
-  //   {
-  //     title: 'Technical Events',
-  //     description: 'Dive into the world of technology with our cutting-edge technical events. From coding challenges to hardware hacking, showcase your technical prowess.',
-  //     backgroundImage: 'https://picsum.photos/240/320?random=4',
-  //     details: [
-  //       { name: 'Competitive Programming', time: '10:00 AM', venue: 'Lab 1' },
-  //       { name: 'Web Development', time: '2:00 PM', venue: 'Lab 2' },
-  //       { name: 'App Development', time: '11:00 AM', venue: 'Lab 3' },
-  //       { name: 'Machine Learning', time: '3:00 PM', venue: 'Lab 4' }
-  //     ]
-  //   },
-  //   {
-  //     title: 'Cultural Event',
-  //     description: 'Experience tranquil waters reflecting the surrounding landscape.',
-  //     backgroundImage: 'https://picsum.photos/240/320?random=4'
-  //   },
-  //   {
-  //     title: 'Sports Event',
-  //     description: 'Experience tranquil waters reflecting the surrounding landscape.',
-  //     backgroundImage: 'https://picsum.photos/240/320?random=4'
-  //   },
-  // ]
 
   useEffect(() => {
     const fetchEventDetails = () => {
