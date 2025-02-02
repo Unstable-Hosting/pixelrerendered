@@ -157,6 +157,18 @@
   right: 0.5rem;
 }
 
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 100px;
+  height: 2px;
+  background-color: white;
+  transform: translateX(-50%);
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .text-container h1 {
