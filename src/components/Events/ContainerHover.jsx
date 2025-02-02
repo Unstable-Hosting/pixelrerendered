@@ -19,7 +19,7 @@ const ContainerHover = () => {
       { 
         title: 'Cultural', 
         description: 'Experience tranquil waters reflecting the surrounding landscape.',
-        backgroundImage: 'https://picsum.photos/240/320?random=4'
+        backgroundImage: 'https://i.pinimg.com/originals/e6/2f/e0/e62fe0ca7401c7169801f6603a1d4b7b.gif'
       },
       { 
         title: 'Sports', 
