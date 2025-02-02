@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
-import "../css/ContactUs.css"
+import "../../css/ContactUs.css"
 
 const ContactUs = React.memo(() => {
   const [activeCheckpoint, setActiveCheckpoint] = useState(null)
