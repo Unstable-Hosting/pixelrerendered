@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import styles from '../../css/events';
+import styles from '../../utils/events';
 
 const EventContainer = ({ title, description, backgroundImage, handleClick }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
