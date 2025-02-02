@@ -6,7 +6,7 @@ import TextScramble from "../components/Hero/TextScramble.jsx";
 import Timer from "../components/Hero/Timer.jsx";
 import ContainerHover from "../components/Events/ContainerHover.jsx";
 import NavBar from "../components/NavBar.jsx";
-import ContactUs from "./ContactUs.jsx";
+import ContactUs from "./views/ContactUs.jsx";
 
 const LandingPage = () => {
   const phrases = [
