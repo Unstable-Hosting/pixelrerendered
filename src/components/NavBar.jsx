@@ -35,13 +35,6 @@ const NavBar = () => {
 
               {/* Desktop Menu */}
               <div className="hidden md:flex items-center space-x-8">
-                <a href="#about" 
-                   onClick={(e) => handleNavClick(e, 'about-container')} 
-                   className={`nav-link text-white hover:text-gray-300 transition-colors text-xl font-['Work_Sans'] font-bold ${
-                     activeSection === 'about-container' ? 'active' : ''
-                   }`}>
-                  About
-                </a>
                 <a href="#events"
                    onClick={(e) => handleNavClick(e, 'Events-container')} 
                    className={`nav-link text-white hover:text-gray-300 transition-colors text-xl font-['Work_Sans'] font-bold cursor-pointer ${
@@ -62,6 +55,13 @@ const NavBar = () => {
                      activeSection === 'contact-container' ? 'active' : ''
                    }`}>
                   Contact
+                </a>
+                <a href="#about" 
+                   onClick={(e) => handleNavClick(e, 'about-container')} 
+                   className={`nav-link text-white hover:text-gray-300 transition-colors text-xl font-['Work_Sans'] font-bold ${
+                     activeSection === 'about-container' ? 'active' : ''
+                   }`}>
+                  About
                 </a>
               </div>
 
@@ -102,13 +102,6 @@ const NavBar = () => {
               <div className="md:hidden">
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/40 rounded-lg mt-2">
                   <a
-                    href="#about"
-                    onClick={(e) => handleNavClick(e, 'about-container')}
-                    className="text-white hover:text-gray-300 block px-3 py-2 text-base font-['Work_Sans'] font-bold transition-colors"
-                  >
-                    About
-                  </a>
-                  <a
                     onClick={(e) => handleNavClick(e, 'Events-container')}
                     className="text-white hover:text-gray-300 block px-3 py-2 text-base font-['Work_Sans'] font-bold transition-colors cursor-pointer"
                   >
@@ -127,6 +120,13 @@ const NavBar = () => {
                     className="text-white hover:text-gray-300 block px-3 py-2 text-base font-['Work_Sans'] font-bold transition-colors"
                   >
                     Contact
+                  </a>
+                  <a
+                    href="#about"
+                    onClick={(e) => handleNavClick(e, 'about-container')}
+                    className="text-white hover:text-gray-300 block px-3 py-2 text-base font-['Work_Sans'] font-bold transition-colors"
+                  >
+                    About
                   </a>
                 </div>
               </div>

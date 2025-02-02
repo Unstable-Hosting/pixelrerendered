@@ -1,6 +1,6 @@
 import React from 'react'
 import EventContainer from './EventsContainer';
-import styles from '../../css/events';
+import styles from '../../utils/events';
 import { useNavigate } from 'react-router-dom';
 
 const ContainerHover = () => {

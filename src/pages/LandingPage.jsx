@@ -6,6 +6,7 @@ import TextScramble from "../components/Hero/TextScramble.jsx";
 import Timer from "../components/Hero/Timer.jsx";
 import ContainerHover from "../components/Events/ContainerHover.jsx";
 import NavBar from "../components/NavBar.jsx";
+import ContactUs from "./views/ContactUs.jsx";
 
 const LandingPage = () => {
   const phrases = [
@@ -47,7 +48,7 @@ const LandingPage = () => {
       {/* Events Section */}
       <div className="w-full flex flex-col gap-50 pt-[4rem]" id="Events-container">
         <div className="">
-          <h1 className="text-6xl text-white font-[Blanka]">Events</h1>
+          <h1 className="text-6xl text-white font-[Blanka] header relative">Events</h1>
         </div>
         <div className="w-full">
           <ContainerHover />
@@ -57,14 +58,17 @@ const LandingPage = () => {
       {/* Sponsors Section */}
       <div className="w-full flex flex-col gap-50 pt-[4rem]" id="sponsors-container">
         <div className="">
-          <h1 className="text-6xl text-white font-[Blanka]">Sponsors</h1>
+          <h1 className="text-6xl text-white font-[Blanka] header relative">Sponsors</h1>
         </div>
       </div>
 
       {/* Contact Section */}
       <div className="w-full flex flex-col gap-50 pt-[4rem]" id="contact-container">
         <div className="">
-          <h1 className="text-6xl text-white font-[Blanka]">Contact</h1>
+          <h1 className="text-6xl text-white font-[Blanka] header relative">Contact</h1>
+          <div className="w-full">
+          <ContactUs />
+        </div>
         </div>
       </div>
 

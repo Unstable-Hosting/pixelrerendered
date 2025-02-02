@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import '../../css/card.css'; 
-import { eventData } from '../../css/eventsData';
+import { eventData } from '../../utils/eventsData';
 
 const DynamicEventsPage = () => {
   const { title } = useParams(); // Get the title from the URL parameters
