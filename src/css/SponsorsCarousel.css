@@ -1,0 +1,65 @@
+.sponsors-carousel {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+
+.sponsors-container {
+  position: relative;
+  width: 100%;
+}
+
+.sponsors-track {
+  display: flex;
+  width: max-content;
+  animation: continuousScroll 30s linear infinite;
+}
+
+.sponsor-item {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 100px;
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.sponsor-item:hover {
+  transform: scale(1.05);
+}
+
+.sponsor-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+@keyframes continuousScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move by the width of one complete set of sponsors */
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+/* Pause animation on hover */
+.sponsors-track:hover {
+  animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sponsor-item {
+    width: 150px;
+    height: 75px;
+    margin: 0 1rem;
+  }
+} 

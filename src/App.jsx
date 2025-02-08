@@ -1,18 +1,11 @@
-import { useEffect, useState } from "react";
-import { Outlet, useLocation } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
+import { Outlet } from "react-router-dom";
+import NavBar from "./components/NavBar";
 
 function App() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    // Effect
-  }, []);
-
   return (
-    // <section className="w-full flex-box flex-col">
-    <section className="App w-[] h-[100vh]">
-      {pathname === "/" ? <LandingPage /> : <Outlet />}
+    <section className="App w-[100%] h-[100%] bg-black  ">
+      <NavBar />
+      <Outlet />
     </section>
   );
 }

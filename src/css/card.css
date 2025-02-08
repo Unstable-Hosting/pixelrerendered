@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+.event-page {
+  background-color: #000000;
+  /* background: url('https://picsum.photos/240/320?random=1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  padding: 8rem .5rem; /* Reduced padding for better mobile view */
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #0a0a1f 0%, #1a1a3f 100%); */
+}
+
+.event-page-title {
+  font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
+  text-align: left;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.event-card {
+  background: rgba(20, 20, 20, 0.95);
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  height: 100%; /* Ensure consistent height */
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+  transform: translateY(0);
+}
+
+.event-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(0, 255, 255, 0.03),
+    transparent
+  );
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+  pointer-events: none;
+}
+/* 
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(255, 255, 255, 0.842),
+              0 0 20px 0 rgba(255, 255, 255, 0.1);
+} */
+
+.event-card:hover::before {
+  transform: rotate(45deg) translate(50%, 50%);
+}
+
+.event-name {
+  font-size: clamp(1.1rem, 2vw, 1.4rem); /* Responsive font size */
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+.event-name::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #ffffff, transparent);
+}
+
+.event-details {
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem); /* Responsive font size */
+  margin-bottom: 1rem;
+  color: #b8b8d4;
+}
+
+.event-details p {
+  margin: 0.8rem 0;
+  display: flex;
+  align-items: left;
+  text-align: left;
+}
+
+.event-details strong {
+  color: #ffffff;
+  font-weight: 500;
+  min-width: 100px;
+  text-align: left;
+}
+
+.event-description {
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem); /* Responsive font size */
+  color: #d1d1e0;
+  line-height: 1.6;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 #ffffff, -0.05em -0.025em 0 #fc00ff;
+  }
+  14% {
+    text-shadow: 0.05em 0 0 #ffffff, -0.05em -0.025em 0 #fc00ff;
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 #ffffff, 0.025em 0.025em 0 #fc00ff;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #ffffff, 0.025em 0.025em 0 #fc00ff;
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 #ffffff, 0.05em 0 0 #fc00ff;
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 #ffffff, 0.05em 0 0 #fc00ff;
+  }
+  100% {
+    text-shadow: -0.025em 0 0 #ffffff, -0.025em -0.025em 0 #fc00ff;
+  }
+}
+
+.event-card:hover .event-name {
+  animation: glitch 1s linear infinite;
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .event-page {
+    padding: 3rem 1.5rem;
+  }
+
+  .event-grid {
+    gap: 1.5rem;
+  }
+
+  .event-card {
+    padding: 1.2rem;
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  .event-page {
+    padding: 2rem 1rem;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 1rem;
+  }
+
+  .event-card {
+    padding: 1rem;
+  }
+
+  .event-details p {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
+  .event-page {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .event-page-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .event-card {
+    padding: 0.8rem;
+  }
+}
+
+/* Hover effects only on devices that support hover */
+@media (hover: hover) {
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .event-card:hover .event-name {
+    animation: glitch 1s linear infinite;
+  }
+}
+
+/* Ensure animations are disabled on devices that prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .event-card {
+    transition: none;
+  }
+
+  .event-card:hover {
+    transform: none;
+  }
+
+  .event-card:hover .event-name {
+    animation: none;
+  }
+}
+
+/* Add subtle animation for card appearance */
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.event-card {
+  animation: cardAppear 0.5s ease-out forwards;
+}

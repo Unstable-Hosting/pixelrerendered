@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "../css/TextScramble.css";
+import "../../css/TextScramble.css";
 
 class TextScrambleEffect {
   constructor(el) {
