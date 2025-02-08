@@ -33,7 +33,7 @@ const DynamicEventsPage = () => {
 
   return (
     <div className="event-page">
-      <h1 className="event-page-title">{eventDetails.title}</h1>
+      <h1 className="event-page-title text-white text-6xl font-[Blanka] relative max-w-6xl mx-auto">{eventDetails.title}</h1>
       
       <div className="event-grid">
         {eventDetails.details.map((detail, index) => (

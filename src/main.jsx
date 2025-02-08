@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import LandingPage from "./pages/LandingPage";
 import DynamicEventsPage from "./components/DynamicEventsPage/DynamicEventsPage";
+import EventsPage from "./pages/EventsPage.jsx";
 
 const removePreloader = () => {
   const preloader = document.getElementById("preloader");
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <LandingPage />,
+      },
+      {
+        path: "events",
+        element: <EventsPage />,
       },
       {
         path: "events/:title",

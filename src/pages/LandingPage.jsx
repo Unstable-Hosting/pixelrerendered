@@ -7,6 +7,7 @@ import Timer from "../components/Hero/Timer.jsx";
 import ContainerHover from "../components/Events/ContainerHover.jsx";
 import NavBar from "../components/NavBar.jsx";
 import ContactUs from "./views/ContactUs.jsx";
+import SponsorsCarousel from '../components/Sponsors/SponsorsCarousel';
 
 const LandingPage = () => {
   const phrases = [
@@ -60,6 +61,7 @@ const LandingPage = () => {
         <div className="">
           <h1 className="text-6xl text-white font-[Blanka] header relative">Sponsors</h1>
         </div>
+        <SponsorsCarousel />
       </div>
 
       {/* Contact Section */}

@@ -9,13 +9,13 @@
   background-repeat: no-repeat; */
   color: #fff;
   font-family: 'Orbitron', sans-serif;
-  padding: 8rem 10rem;
+  padding: 8rem .5rem; /* Reduced padding for better mobile view */
   min-height: 100vh;
   /* background: linear-gradient(135deg, #0a0a1f 0%, #1a1a3f 100%); */
 }
 
 .event-page-title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
   text-align: left;
   margin-bottom: 2rem;
   color: #ffffff;
@@ -25,21 +25,23 @@
 
 .event-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .event-card {
   background: rgba(20, 20, 20, 0.95);
   border-radius: 15px;
-  padding: 1.8rem;
+  padding: 1.5rem;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  height: 100%; /* Ensure consistent height */
   /* border: 1px solid rgba(255, 255, 255, 0.1); */
   transform: translateY(0);
 }
@@ -73,8 +75,8 @@
 }
 
 .event-name {
-  font-size: 1.4rem;
-  margin-bottom: 1.2rem;
+  font-size: clamp(1.1rem, 2vw, 1.4rem); /* Responsive font size */
+  margin-bottom: 1rem;
   color: #ffffff;
   font-weight: 700;
   letter-spacing: 1px;
@@ -94,8 +96,8 @@
 }
 
 .event-details {
-  font-size: 0.9rem;
-  margin-bottom: 1.2rem;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem); /* Responsive font size */
+  margin-bottom: 1rem;
   color: #b8b8d4;
 }
 
@@ -114,7 +116,7 @@
 }
 
 .event-description {
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem); /* Responsive font size */
   color: #d1d1e0;
   line-height: 1.6;
   padding-top: 1rem;
@@ -150,25 +152,80 @@
   animation: glitch 1s linear infinite;
 }
 
-/* Responsive hover effects */
-@media (hover: hover) {
-  .event-card:hover {
-    background: rgba(16, 16, 41, 0.98);
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .event-page {
+    padding: 3rem 1.5rem;
+  }
+
+  .event-grid {
+    gap: 1.5rem;
+  }
+
+  .event-card {
+    padding: 1.2rem;
   }
 }
 
+/* Mobile Breakpoint */
 @media (max-width: 768px) {
+  .event-page {
+    padding: 2rem 1rem;
+  }
+
   .event-grid {
-    grid-template-columns: 1fr;
-    padding: 0.5rem;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 1rem;
   }
-  
-  .event-page-title {
-    font-size: 2rem;
-  }
-  
+
   .event-card {
-    padding: 1.5rem;
+    padding: 1rem;
+  }
+
+  .event-details p {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
+  .event-page {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .event-page-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .event-card {
+    padding: 0.8rem;
+  }
+}
+
+/* Hover effects only on devices that support hover */
+@media (hover: hover) {
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .event-card:hover .event-name {
+    animation: glitch 1s linear infinite;
+  }
+}
+
+/* Ensure animations are disabled on devices that prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .event-card {
+    transition: none;
+  }
+
+  .event-card:hover {
+    transform: none;
+  }
+
+  .event-card:hover .event-name {
+    animation: none;
   }
 }
 

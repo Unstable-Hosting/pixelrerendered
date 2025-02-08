@@ -25,7 +25,7 @@ const NavBar = () => {
               {/* Logo/Home */}
               <a 
                 href="/" 
-                onClick={(e) => handleNavClick(e, 'main-container')}
+                // onClick={(e) => handleNavClick(e, 'main-container')}
                 className={`text-white hover:text-gray-300 transition-colors text-xl font-['Work_Sans'] font-bold nav-link ${
                   activeSection === 'main-container' ? 'active' : ''
                 }`}
@@ -35,8 +35,8 @@ const NavBar = () => {
 
               {/* Desktop Menu */}
               <div className="hidden md:flex items-center space-x-8">
-                <a href="#events"
-                   onClick={(e) => handleNavClick(e, 'Events-container')} 
+                <a href="/events"
+                  //  onClick={(e) => handleNavClick(e, 'Events-container')} 
                    className={`nav-link text-white hover:text-gray-300 transition-colors text-xl font-['Work_Sans'] font-bold cursor-pointer ${
                      activeSection === 'Events-container' ? 'active' : ''
                    }`}>
