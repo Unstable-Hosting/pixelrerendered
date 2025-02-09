@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+  --neon-blue: #00f3ff;
+  --neon-pink: #ff00ff;
+  --dark-bg: #0a0a0a;
+  --card-bg: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-bg);
+}
+
+.about-container {
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.cyber-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, rgba(0, 243, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 243, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+}
+
+.hero-section {
+  padding: 6rem 2rem 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3.5rem;
+  margin: 0;
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue);
+}
+
+.content-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.about-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 243, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+  transform: rotate(30deg);
+  pointer-events: none;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+}
+
+.about-card h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.neon {
+  color: var(--neon-blue);
+  text-shadow: 0 0 5px var(--neon-blue);
+}
+
+.about-card p {
+  line-height: 1.7;
+  color: #a0aec0;
+  margin-bottom: 1.5rem;
+}
+
+.achievement,
+.pixels-history {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 243, 255, 0.2);
+}
+
+.achievement h3,
+.pixels-history h3 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.achievement ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievement li {
+  color: #a0aec0;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.achievement li::before {
+  content: ">";
+  color: var(--neon-pink);
+  position: absolute;
+  left: 0;
+  font-family: "Orbitron", sans-serif;
+}
+
+.history-item {
+  margin-bottom: 1.5rem;
+}
+
+.history-item h4 {
+  color: var(--neon-pink);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-family: "Orbitron", sans-serif;
+}
+
+.history-item p {
+  margin: 0;
+}
+
+.qr-section {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px 60px;
+  background: #1a1a1a;
+  border: 1px solid rgba(0, 243, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.qr-code {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.instagram-handle {
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 15px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 768px) {
+  .content-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+}
