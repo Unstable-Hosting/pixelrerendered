@@ -25,10 +25,6 @@ const router = createBrowserRouter([
         element: <LandingPage />,
       },
       {
-        path: "events",
-        element: <EventsPage />,
-      },
-      {
         path: "events/:title",
         element: <DynamicEventsPage />,
       },

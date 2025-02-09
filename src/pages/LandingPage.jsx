@@ -48,7 +48,7 @@ const LandingPage = () => {
       </div>
 
       {/* Events Section */}
-      <div className="w-full flex flex-col gap-50 pt-[4rem]" id="Events-container">
+      <div className="patterned-section w-full flex flex-col gap-50 pt-[4rem] relative" id="Events-container">
         <div className="">
           <h1 className="text-6xl text-white font-[Blanka] header relative">Events</h1>
         </div>
@@ -58,7 +58,7 @@ const LandingPage = () => {
       </div>
 
       {/* Sponsors Section */}
-      <div className="w-full flex flex-col gap-50 pt-[4rem]" id="sponsors-container">
+      <div className="patterned-section w-full flex flex-col gap-50 pt-[4rem]" id="sponsors-container">
         <div className="">
           <h1 className="text-6xl text-white font-[Blanka] header relative">Sponsors</h1>
         </div>
@@ -66,7 +66,7 @@ const LandingPage = () => {
       </div>
 
       {/* Contact Section */}
-      <div className="w-full flex flex-col gap-50 pt-[4rem]" id="contact-container">
+      <div className="patterned-section w-full flex flex-col gap-50 pt-[4rem]" id="contact-container">
         <div className="">
           <h1 className="text-6xl text-white font-[Blanka] header relative">Contact</h1>
           <div className="w-full">
@@ -76,7 +76,7 @@ const LandingPage = () => {
       </div>
       
       {/* About Section */}
-      <div className="w-full flex flex-col gap-50 pt-[4rem]" id="about-container">
+      <div className="patterned-section w-full flex flex-col gap-50 pt-[4rem]" id="about-container">
         <div className="">
           <h1 className="text-6xl text-white font-[Blanka] header relative">About</h1>
           <div className="w-full">

@@ -4,7 +4,7 @@ import qrCode from '../../assets/Instagram handle.png'; // Import the image
 
 function About() {
   return (
-    <div className="about-container">
+    <div className="about-container about-theme">
       <div className="cyber-grid"></div>
       <section className="hero-section">
       </section>

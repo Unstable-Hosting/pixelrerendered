@@ -5,17 +5,11 @@
   --text-color: #e0e0e0;
   --primary-color: #3498db;
   --secondary-color: #2ecc71;
-  --accent-color: #9b59b6;
-  --bg-pattern: linear-gradient(to right, rgba(52, 152, 219, 0.1) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(52, 152, 219, 0.1) 1px, transparent 1px),
-    radial-gradient(circle, rgba(46, 204, 113, 0.1) 2px, transparent 2px);
-  
+  --accent-color: #9b59b6;  
 }
 
 .contact-page {
   min-height: 100vh;
-  background-color: var(--bg-color);
-  background-image: var(--bg-pattern);
   background-size: 50px 50px, 50px 50px, 100px 100px;
   background-position: center;
   padding: 60px 0;

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap");
 
-:root {
+.about-theme {
   --neon-blue: #00f3ff;
   --neon-pink: #ff00ff;
   --dark-bg: #0a0a0a;
@@ -150,9 +150,14 @@ body {
 }
 
 .qr-section {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  font-family: "Orbitron", sans-serif;
   text-align: center;
-  margin: 40px auto;
-  padding: 20px 60px;
+  margin: 2rem auto;
+  padding: 2rem;
   background: #1a1a1a;
   border: 1px solid rgba(0, 243, 255, 0.2);
   border-radius: 12px;
@@ -161,6 +166,26 @@ body {
   align-items: center;
   justify-content: center;
   width: fit-content;
+  max-width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.qr-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+  transform: rotate(30deg);
+  pointer-events: none;
+}
+
+.qr-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
 }
 
 .qr-code {
