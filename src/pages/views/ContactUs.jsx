@@ -109,7 +109,7 @@ const ContactUs = React.memo(() => {
                     <div className="address-content">
                       <address>{item.address}</address>
                       <span className="coordinates">{item.coordinates}</span>
-                      <a href={item.mapLink} className="contact-link">
+                      <a href={item.mapLink} className="contact-link" target="blank">
                         <span className="direction-text">GET DIRECTIONS</span>
                       </a>
                     </div>
@@ -121,7 +121,7 @@ const ContactUs = React.memo(() => {
                         {item.contacts.map((contact, contactIndex) => (
                           <div key={contactIndex} className="contact-item text-left">
                             <span>{contact.text}</span>
-                            <a href={`tel:${contact.phoneNo}`} className="contact-link contact-details">
+                            <a href={`tel:${contact.phoneNo}`} className="contact-link contact-details" target="blank">
                               {contact.phoneNo}
                             </a>
                           </div>
@@ -136,6 +136,7 @@ const ContactUs = React.memo(() => {
                         className="contact-link"
                         tabIndex={0}
                         onKeyDown={(e) => handleKeyDown(e, item.link)}
+                        target="blank"
                       >
                         {item.handle}
                       </a>
@@ -151,4 +152,4 @@ const ContactUs = React.memo(() => {
   )
 })
 
-export default ContactUs
+export default ContactUs;
