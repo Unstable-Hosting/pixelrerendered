@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import "../css/LandingPage.css";
 import Pixels from "../assets/logo.png";
-import CountDownTimer from "../components/Hero/CountDownTimer.jsx";
+// import CountDownTimer from "../components/Hero/CountDownTimer.jsx";
 import TextScramble from "../components/Hero/TextScramble.jsx";
 import Timer from "../components/Hero/Timer.jsx";
 import ContainerHover from "../components/Events/ContainerHover.jsx";
-import NavBar from "../components/NavBar.jsx";
+// import NavBar from "../components/NavBar.jsx";
 import ContactUs from "./views/ContactUs.jsx";
 import SponsorsCarousel from '../components/Sponsors/SponsorsCarousel';
 import About from "./views/About.jsx";

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 //Sample Loader to be used between pages
 //to be deleted later
 function Loader() {

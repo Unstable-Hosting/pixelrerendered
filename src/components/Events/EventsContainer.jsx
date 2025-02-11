@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
+import PropTypes from 'prop-types';
 import styles from '../../utils/events';
 
 const EventContainer = ({ title, description, backgroundImage, handleClick }) => {
@@ -87,5 +88,10 @@ const EventContainer = ({ title, description, backgroundImage, handleClick }) =>
     </div>
   );
 };
-
+EventContainer.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  backgroundImage: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
 export default EventContainer;

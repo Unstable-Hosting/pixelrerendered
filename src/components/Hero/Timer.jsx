@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import CountDownTimer from "./CountDownTimer.jsx";
 
 const Timer = () => {

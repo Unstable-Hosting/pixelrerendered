@@ -150,6 +150,8 @@ const ContactUs = React.memo(() => {
       </div>
     </div>
   )
-})
+});
+
+ContactUs.displayName = 'ContactUs';
 
 export default ContactUs;
