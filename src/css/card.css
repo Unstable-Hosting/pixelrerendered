@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
 
 .event-page {
   background-color: #000000;
@@ -8,8 +8,8 @@
   background-position: center;
   background-repeat: no-repeat; */
   color: #fff;
-  font-family: 'Orbitron', sans-serif;
-  padding: 8rem .5rem; /* Reduced padding for better mobile view */
+  font-family: "Orbitron", sans-serif;
+  padding: 8rem 0.5rem; /* Reduced padding for better mobile view */
   min-height: 100vh;
   /* background: linear-gradient(135deg, #0a0a1f 0%, #1a1a3f 100%); */
 }
@@ -86,7 +86,7 @@
 }
 
 .event-name::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
