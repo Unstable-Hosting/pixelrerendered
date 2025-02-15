@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import '../../css/About.css';
 import qrCode from '../../assets/Instagram handle.png'; // Import the image
 
@@ -13,13 +13,13 @@ function About() {
         <div className="about-card siescoms">
           <h2 className="neon">SIESCOMS</h2>
           <p>The SIES College of Management Studies (SIESCOMS) was established in 1995. SIESCOMS envisages providing quality management education for the nascent professionals, the dynamic future managers for 21st century.</p>
-          <p>SIESCOMS's foundation maps its roots to the rich tradition of South India Education Society (SIES), one of the oldest and value-based educational trusts that run a number of educational institutes in the city of Mumbai and Navi Mumbai.</p>
+          <p>SIESCOMS&apos;s foundation maps its roots to the rich tradition of South India Education Society (SIES), one of the oldest and value-based educational trusts that run a number of educational institutes in the city of Mumbai and Navi Mumbai.</p>
           
           <div className="achievement">
             <h3 className="neon">Achievements</h3>
             <ul>
               <li>ISO 9001:2015 Certification for quality management education by Lloyd Register Quality Assurance (LRQA)</li>
-              <li>Prestigious Ramakrishna Bajaj National Quality (RBNQ) award for the year 2008 in the "Education" category. This is the only award developed in the country on the lines of the Malcolm-Balridge National Quality Award.</li>
+              <li>Prestigious Ramakrishna Bajaj National Quality (RBNQ) award for the year 2008 in the &quot;Education&quot; category. This is the only award developed in the country on the lines of the Malcolm-Balridge National Quality Award.</li>
             </ul>
           </div>
         </div>

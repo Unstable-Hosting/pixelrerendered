@@ -7,14 +7,13 @@
 }
 
 .events-page::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    linear-gradient(rgba(18, 18, 18, 0.3) 2px, transparent 2px),
+  background: linear-gradient(rgba(18, 18, 18, 0.3) 2px, transparent 2px),
     linear-gradient(90deg, rgba(18, 18, 18, 0.3) 2px, transparent 2px);
   background-size: 50px 50px;
   pointer-events: none;
@@ -23,7 +22,7 @@
 }
 
 .events-page::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -58,11 +57,11 @@
   .events-page::before {
     background-size: 35px 35px;
   }
-  
+
   .events-content {
     padding: 6rem 1rem 1rem;
   }
-} 
+}
 
 @media (max-width: 480px) {
   .event-page-title {

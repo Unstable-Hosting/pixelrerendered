@@ -1,7 +1,13 @@
-import React, { useState, useRef } from 'react';
-import styles from '../../utils/events';
+import { useState, useRef } from "react";
+import PropTypes from "prop-types";
+import styles from "../../utils/events";
 
-const EventContainer = ({ title, description, backgroundImage, handleClick }) => {
+const EventContainer = ({
+  title,
+  description,
+  backgroundImage,
+  handleClick,
+}) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
 
@@ -31,9 +37,10 @@ const EventContainer = ({ title, description, backgroundImage, handleClick }) =>
       rotateX(${-mousePosition.y / 10}deg) 
       scale(${mousePosition.x === 0 && mousePosition.y === 0 ? 1 : 1.02})
     `,
-    boxShadow: mousePosition.x === 0 && mousePosition.y === 0 
-      ? 'rgba(0, 0, 0, 0.1) 0 0 10px' 
-      : 'rgba(0, 0, 0, 0.2) 0 0 20px'
+    boxShadow:
+      mousePosition.x === 0 && mousePosition.y === 0
+        ? "rgba(0, 0, 0, 0.1) 0 0 10px"
+        : "rgba(0, 0, 0, 0.2) 0 0 20px",
   };
 
   const backgroundStyle = {
@@ -43,11 +50,11 @@ const EventContainer = ({ title, description, backgroundImage, handleClick }) =>
       translateY(${-mousePosition.y / 6}px) 
       scale(${mousePosition.x === 0 && mousePosition.y === 0 ? 1 : 1.05})
     `,
-    opacity: mousePosition.x === 0 && mousePosition.y === 0 ? 0.5 : 0.7
+    opacity: mousePosition.x === 0 && mousePosition.y === 0 ? 0.5 : 0.7,
   };
 
   return (
-    <div 
+    <div
       style={styles.cardWrap}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -55,31 +62,37 @@ const EventContainer = ({ title, description, backgroundImage, handleClick }) =>
       role="button"
       tabIndex={0}
     >
-      <div 
-        ref={cardRef} 
+      <div
+        ref={cardRef}
         style={{
           ...styles.card,
-          ...cardStyle
+          ...cardStyle,
         }}
       >
-        <div 
+        <div
           style={{
             ...styles.cardBg,
-            ...backgroundStyle
+            ...backgroundStyle,
           }}
         />
-        <div style={{
-          ...styles.cardInfo,
-          opacity: mousePosition.x === 0 && mousePosition.y === 0 ? 0.7 : 1,
-          transform: `
-            translateY(${mousePosition.x === 0 && mousePosition.y === 0 ? '40%' : '0'})
-          `
-        }}>
+        <div
+          style={{
+            ...styles.cardInfo,
+            opacity: mousePosition.x === 0 && mousePosition.y === 0 ? 0.7 : 1,
+            transform: `
+            translateY(${
+              mousePosition.x === 0 && mousePosition.y === 0 ? "40%" : "0"
+            })
+          `,
+          }}
+        >
           <h1 style={styles.cardInfoTitle}>{title}</h1>
-          <p style={{
-            ...styles.cardInfoDescription,
-            opacity: mousePosition.x === 0 && mousePosition.y === 0 ? 0 : 1
-          }}>
+          <p
+            style={{
+              ...styles.cardInfoDescription,
+              opacity: mousePosition.x === 0 && mousePosition.y === 0 ? 0 : 1,
+            }}
+          >
             {description}
           </p>
         </div>
@@ -87,5 +100,10 @@ const EventContainer = ({ title, description, backgroundImage, handleClick }) =>
     </div>
   );
 };
-
+EventContainer.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  backgroundImage: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
 export default EventContainer;

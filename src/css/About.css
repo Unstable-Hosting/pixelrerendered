@@ -27,7 +27,11 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to right, rgba(0, 243, 255, 0.1) 1px, transparent 1px),
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 243, 255, 0.1) 1px,
+      transparent 1px
+    ),
     linear-gradient(to bottom, rgba(0, 243, 255, 0.1) 1px, transparent 1px);
   background-size: 50px 50px;
   z-index: -1;
@@ -73,7 +77,11 @@ body {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
   transform: rotate(30deg);
   pointer-events: none;
 }
@@ -170,7 +178,6 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .qr-section::before {
   content: "";
   position: absolute;
@@ -178,7 +185,11 @@ body {
   left: -50%;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
   transform: rotate(30deg);
   pointer-events: none;
 }

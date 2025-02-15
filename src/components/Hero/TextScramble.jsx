@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import "../../css/TextScramble.css";
 
 class TextScrambleEffect {
@@ -89,6 +90,10 @@ const TextScramble = ({ phrases }) => {
       <div className="text" ref={textRef}></div>
     </div>
   );
+};
+
+TextScramble.propTypes = {
+  phrases: PropTypes.array.isRequired,
 };
 
 export default TextScramble;
