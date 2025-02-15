@@ -31,7 +31,7 @@
 }
 
 .main-content {
-  background-image: url("cyberneon.gif");
+  background-image: url("../assets/cyberneon.gif");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 2;
