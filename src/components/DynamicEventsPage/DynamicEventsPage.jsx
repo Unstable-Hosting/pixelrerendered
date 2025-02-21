@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "../../css/card.css";
 import { eventData } from "../../utils/eventsData";
 
 const DynamicEventsPage = () => {
-  const { title } = useParams(); // Get the title from the URL parameters
+  const { title } = useParams();
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const [eventDetails, setEventDetails] = useState(null);
 
@@ -21,6 +22,11 @@ const DynamicEventsPage = () => {
 
     fetchEventDetails();
   }, [title]);
+
+  const handleParticipateClick = (eventName) => {
+    console.log("Navigating to:", `/event-info/${encodeURIComponent(title)}/${encodeURIComponent(eventName)}`);
+    navigate(`/event-info/${encodeURIComponent(title)}/${encodeURIComponent(eventName)}`);
+  };
 
   if (loading) {
     return <div className="loader">Loading...</div>;
@@ -49,6 +55,12 @@ const DynamicEventsPage = () => {
               </p>
             </div>
             <div className="event-description">{eventDetails.description}</div>
+            <button 
+              className="participate-button"
+              onClick={() => handleParticipateClick(detail.name)}
+            >
+              Participate Now
+            </button>
           </div>
         ))}
       </div>
