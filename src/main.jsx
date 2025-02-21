@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import LandingPage from "./pages/LandingPage";
+import EventInfo from './components/DynamicEventsPage/EventInfo'
 import DynamicEventsPage from "./components/DynamicEventsPage/DynamicEventsPage";
 // import EventsPage from "./pages/EventsPage.jsx";
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         path: "events/:title",
         element: <DynamicEventsPage />,
       },
+      {
+        path: "/event-info/:title/:eventName",
+        element: <EventInfo />
+      }
     ],
   },
 ]);

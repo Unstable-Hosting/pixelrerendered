@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+.event-info-page {
+  background: linear-gradient(135deg, #000000, #1a1a2e);
+  min-height: 100vh;
+  padding: 8rem 2rem;
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+}
+
+.event-info-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.event-info-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-align: center;
+  margin-bottom: 3rem;
+  color: transparent;
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+  letter-spacing: 2px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.event-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-info-card {
+  background: rgba(17, 17, 17, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  height: fit-content;
+}
+
+.event-info-section {
+  background: rgba(25, 25, 25, 0.95);
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.event-info-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 242, 254, 0.2);
+}
+
+/* Priority sections take full width */
+.event-info-section:nth-child(1),
+.event-info-section:nth-child(2),
+.event-info-section:has(.info-label:contains("Description")),
+.event-info-section:has(.info-label:contains("Rules")) {
+  grid-column: 1 / -1;
+}
+
+.info-label {
+  color: #00f2fe;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.info-label::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: #4facfe;
+}
+
+.info-value {
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Updated Rules Section Layout */
+.event-info-section:has(.info-label:contains("Rules")) {
+  grid-column: 1 / -1;
+  background: linear-gradient(145deg, rgba(25, 25, 25, 0.95), rgba(30, 30, 35, 0.95));
+  border: 1px solid rgba(0, 242, 254, 0.1);
+  padding: 2rem;
+}
+
+.rules-card {
+  background: rgba(17, 17, 17, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.rules-header {
+  color: #00f2fe;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.rules-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.rules-category {
+  background: rgba(25, 25, 25, 0.95);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 242, 254, 0.1);
+}
+
+/* General and Registration side by side */
+.rules-category:has(.rules-category-title:contains("general")),
+.rules-category:has(.rules-category-title:contains("registration")) {
+  grid-column: span 1;
+}
+
+/* Game and Winning Criteria side by side */
+.rules-category:has(.rules-category-title:contains("game")),
+.rules-category:has(.rules-category-title:contains("winning")) {
+  grid-column: span 1;
+}
+
+/* Safety and other categories full width */
+.rules-category:has(.rules-category-title:contains("safety")),
+.rules-category:not(:has(.rules-category-title:matches("general|registration|game|winning"))) {
+  grid-column: 1 / -1;
+}
+
+.rules-category-title {
+  color: #00f2fe;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.rules-category-title::before {
+  content: "⟡";
+  margin-right: 0.8rem;
+  color: #4facfe;
+  font-size: 1.2rem;
+}
+
+.rules-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.rules-list li {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem 1rem 1rem 2.5rem;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.rules-list li:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(5px);
+}
+
+.rules-list li::before {
+  content: "›";
+  position: absolute;
+  left: 1rem;
+  color: #00f2fe;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Staggered animation for rules */
+.rules-list li {
+  opacity: 0;
+  animation: slideInRule 0.5s ease-out forwards;
+}
+
+@keyframes slideInRule {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.rules-list li:nth-child(1) { animation-delay: 0.1s; }
+.rules-list li:nth-child(2) { animation-delay: 0.2s; }
+.rules-list li:nth-child(3) { animation-delay: 0.3s; }
+.rules-list li:nth-child(4) { animation-delay: 0.4s; }
+.rules-list li:nth-child(5) { animation-delay: 0.5s; }
+
+/* Nested rules styling */
+.rules-list h4 {
+  color: #4facfe;
+  font-size: 1rem;
+  margin: 1.5rem 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rules-list h4:first-child {
+  margin-top: 0;
+}
+
+/* Media queries for rules section */
+@media (max-width: 768px) {
+  .rules-container {
+    grid-template-columns: 1fr;
+  }
+
+  .rules-category {
+    grid-column: 1 / -1 !important;
+  }
+
+  .rules-list li {
+    padding: 0.8rem 0.8rem 0.8rem 2rem;
+  }
+}
+
+/* Disable animations for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .rules-category,
+  .rules-list li {
+    animation: none;
+    transition: none;
+  }
+  
+  .rules-category:hover,
+  .rules-list li:hover {
+    transform: none;
+  }
+}
+
+.register-button {
+  grid-column: 1 / -1;
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+  border: none;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.register-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: shine 3s infinite;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+}
+
+/* Animations */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(0, 242, 254, 0.8),
+                 0 0 30px rgba(79, 172, 254, 0.6);
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: rotate(45deg) translateX(-100%);
+  }
+  100% {
+    transform: rotate(45deg) translateX(100%);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .event-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-info-card,
+  .rules-card {
+    padding: 1.5rem;
+  }
+
+  .rules-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-info-card {
+    grid-template-columns: 1fr;
+  }
+
+  .event-info-section {
+    padding: 1rem;
+  }
+
+  .rules-header {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .rules-category {
+    padding: 1rem;
+  }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 480px) {
+  .event-info-title {
+    font-size: 1.8rem;
+  }
+
+  .info-label {
+    font-size: 1rem;
+  }
+
+  .info-value {
+    font-size: 0.9rem;
+  }
+
+  .rules-list li {
+    font-size: 0.85rem;
+  }
+}
+
+/* Improve touch targets for mobile */
+@media (hover: none) {
+  .event-info-section,
+  .rules-category,
+  .rules-list li,
+  .register-button {
+    cursor: default;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .register-button {
+    padding: 1.2rem;
+    margin: 1.5rem 0.5rem;
+  }
+}
+
+/* Loading Animation */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  color: #00f2fe;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .event-info-title,
+  .event-info-section,
+  .rules-list li,
+  .register-button::before {
+    animation: none;
+  }
+  
+  .event-info-section:hover {
+    transform: none;
+  }
+}
