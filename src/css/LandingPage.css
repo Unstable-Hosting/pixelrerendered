@@ -422,3 +422,15 @@
     transform: scaleY(1);
   }
 }
+
+/* Additional responsive adjustments for very small heights */
+@media screen and (max-height: 667px) {
+  /* iPhone SE height is 667px */
+  .logo-container {
+    margin-top: 5rem; /* Fixed margin for very small heights */
+    max-height: 20vh; /* Reduce maximum height further */
+  }
+  .main-content{
+    min-height: 105vh;
+  }
+}

@@ -315,6 +315,17 @@
   letter-spacing: 0.1em;
 }
 
+.qr-code-container {
+  background: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.qr-code-container:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
   .content {
     padding: 0 15px;

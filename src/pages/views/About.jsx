@@ -1,6 +1,5 @@
 // import React from 'react';
 import '../../css/About.css';
-import qrCode from '../../assets/Instagram handle.png'; // Import the image
 
 function About() {
   return (
@@ -44,11 +43,6 @@ function About() {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="qr-section">
-        <h2 className="neon">Follow Us on Instagram!</h2>
-        <img src={qrCode} alt="Instagram QR Code" className="qr-code" />
       </section>
     </div>
   );
