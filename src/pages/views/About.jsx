@@ -1,6 +1,5 @@
 // import React from 'react';
 import '../../css/About.css';
-import qrCode from '../../assets/Instagram handle.png'; // Import the image
 
 function About() {
   return (
