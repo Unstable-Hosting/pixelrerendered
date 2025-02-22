@@ -45,11 +45,6 @@ function About() {
           </div>
         </div>
       </section>
-
-      <section className="qr-section">
-        <h2 className="neon">Follow Us on Instagram!</h2>
-        <img src={qrCode} alt="Instagram QR Code" className="qr-code" />
-      </section>
     </div>
   );
 }

@@ -9,28 +9,28 @@ const ContainerHover = () => {
     {
       title: "Technical Events",
       description:
-        "Explore the majestic landscapes of deep geological wonders.",
+        "Dive into the world of technology with our cutting-edge technical events.",
       backgroundImage: "technical.gif",
     },
     {
       title: "Non-Technical Events",
-      description: "Discover pristine shorelines and crystal clear waters.",
-      backgroundImage: "https://picsum.photos/240/320?random=2",
+      description: "Engage in exciting non-technical challenges that test your creativity, wit, and problem-solving abilities.",
+      backgroundImage: "non-tech.gif",
     },
     {
       title: "Cultural Events",
       description:
-        "Experience tranquil waters reflecting the surrounding landscape.",
+        "Showcase your artistic talents and cultural prowess in our diverse range of cultural events.",
       backgroundImage: "cultural.gif",
     },
     {
       title: "Sports Events",
-      description: "Witness the beauty of ancient and towering forests.",
+      description: "Compete in various sports events and showcase your athletic abilities.",
       backgroundImage: "sports.gif",
     },
     {
       title: "E-Sports Events",
-      description: "Witness the beauty of ancient and towering forests.",
+      description: "Battle it out in the digital arena with our exciting E-Sports tournaments.",
       backgroundImage: "esports.gif",
     },
   ];

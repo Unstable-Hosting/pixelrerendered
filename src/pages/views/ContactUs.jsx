@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "../../css/ContactUs.css";
+import InstagramQR from '../../assets/Instagram handle.png'; // Adjust the path according to your QR image location
 
 const ContactUs = React.memo(() => {
   // const [activeCheckpoint, setActiveCheckpoint] = useState(null)
@@ -149,17 +150,28 @@ const ContactUs = React.memo(() => {
                       </div>
                     </div>
                   ) : (
-                    <div>
-                      <span>{item.text}</span>
-                      <a
-                        href={item.link}
-                        className="contact-link"
-                        tabIndex={0}
-                        onKeyDown={(e) => handleKeyDown(e, item.link)}
-                        target="blank"
-                      >
-                        {item.handle}
-                      </a>
+                    <div className="flex flex-col items-center gap-4">
+                      <div>
+                        <span>{item.text}</span>
+                        <a
+                          href={item.link}
+                          className="contact-link"
+                          tabIndex={0}
+                          onKeyDown={(e) => handleKeyDown(e, item.link)}
+                          target="blank"
+                        >
+                          {item.handle}
+                        </a>
+                      </div>
+                      {item.label === "PIXEL INSTAGRAM HANDLE" && (
+                        <div className="qr-code-container w-40 h-40">
+                          <img 
+                            src={InstagramQR} 
+                            alt="Instagram QR Code" 
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
