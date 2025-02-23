@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+.pre-event-container {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Reduce the darkness of the overlay */
+.pre-event-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2); /* Reduced from 0.5 to 0.2 */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Adjust the z-index of other elements to appear above the overlay */
+.logo, .rickroll, .content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Remove the cyber-grid since we're using the GIF */
+.cyber-grid {
+  display: none;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.7));
+  animation: logoGlow 2s ease-in-out infinite alternate;
+  position: relative;
+  z-index: 2;
+  
+}
+
+.rickroll {
+  width: 100%;
+  max-width: 250px;
+  margin: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.rickroll img {
+  width: 100%;
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.presents {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #0ff;
+  text-shadow: 
+    0 0 5px rgba(0, 255, 255, 0.8),
+    0 0 8px rgba(0, 255, 255, 0.6),
+    0 0 12px rgba(0, 255, 255, 0.4);
+  margin-bottom: 10px;
+  animation: textGlitch 3s infinite;
+  letter-spacing: 2px;
+}
+
+.event-name {
+  font-family: 'Monoton', cursive;
+  font-size: 5.5rem;
+  font-weight: 400;
+  color: transparent;
+  background-color: transparent;
+  -webkit-text-stroke: 2px #ffff00;
+  text-shadow: 
+    0 0 7px rgba(255, 255, 0, 0.4),
+    0 0 10px rgba(255, 255, 0, 0.3),
+    0 0 21px rgba(255, 255, 0, 0.2),
+    0 0 42px rgba(255, 255, 0, 0.1);
+  margin: 15px 0;
+  letter-spacing: 8px;
+  animation: neonPulse 1.5s ease-in-out infinite alternate;
+  -webkit-text-fill-color: transparent;
+  margin-top: -25px;
+}
+
+.event-details {
+  font-family: 'Teko', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 15px;
+  margin-top: -14px
+}
+
+.venue, .time {
+  color: transparent;
+  -webkit-text-stroke: 1px #00ff00;
+  text-shadow: 
+    0 0 5px rgba(0, 255, 0, 0.8),
+    0 0 8px rgba(0, 255, 0, 0.6),
+    0 0 12px rgba(0, 255, 0, 0.4);
+  letter-spacing: 2px;
+  animation: neonFlicker 3s infinite alternate;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+@keyframes logoGlow {
+  from { filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.7)); }
+  to { filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.9)); }
+}
+
+@keyframes neonPulse {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 
+      0 0 7px rgba(255, 255, 0, 0.4),
+      0 0 10px rgba(255, 255, 0, 0.3),
+      0 0 21px rgba(255, 255, 0, 0.2),
+      0 0 42px rgba(255, 255, 0, 0.1);
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    -webkit-text-stroke: 2px #ffff00;
+  }
+}
+
+@keyframes neonFlicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow:
+      0 0 5px rgba(0, 255, 0, 0.8),
+      0 0 8px rgba(0, 255, 0, 0.6),
+      0 0 12px rgba(0, 255, 0, 0.4);
+  }
+  20%, 22%, 24%, 55% {
+    text-shadow: none;
+    -webkit-text-stroke: 1px #00ff00;
+  }
+}
+
+@keyframes textGlitch {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow:
+      0 0 5px rgba(0, 255, 255, 0.8),
+      0 0 8px rgba(0, 255, 255, 0.6),
+      0 0 12px rgba(0, 255, 255, 0.4);
+    transform: translate(0);
+  }
+  20%, 22%, 24%, 55% {
+    text-shadow: none;
+    -webkit-text-stroke: 1px #0ff;
+    transform: translate(-2px, 2px);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .presents {
+    font-size: 1rem;
+  }
+  
+  .event-name {
+    font-size: 2.8rem;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 1px #ffff00;
+    margin-top: -25px; /* Adjust spacing */
+  }
+  
+  .event-details {
+    font-size: 1.8rem;
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90vw;
+    margin-top: -14px /* Adjust spacing */
+  }
+
+  .venue, .time {
+    letter-spacing: 1px;
+    -webkit-text-stroke: 0.5px #00ff00;
+  }
+}
+
+/* Additional breakpoint for smaller phones */
+@media (max-width: 380px) {
+  .event-name {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 1px #ffff00;
+  }
+  
+  .event-details {
+    font-size: 1.5rem;
+  }
+
+  .venue, .time {
+    font-size: 1.4rem;
+  }
+}
+
+/* Ensure content is visible on all screen sizes */
+@media (max-height: 700px) {
+  .pre-event-container {
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .rickroll {
+    max-width: 200px;
+    margin: 10px 0;
+  }
+  
+  .content {
+    gap: 10px;
+  }
+}
+
+/* Adjust scanline effect to be more subtle */
+.pre-event-container::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.1) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0.3; /* Reduced opacity */
+}
