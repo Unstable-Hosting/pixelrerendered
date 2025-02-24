@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import '../../css/PreEvent.css';
 import Pixels from "../../assets/logo.png";
 import bgGif from "../../assets/image4.gif"; // Background GIF
