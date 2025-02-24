@@ -7,7 +7,7 @@ export default defineConfig({
     host: true,
     allowedHosts: [
       'localhost',
-      '1f56-183-87-197-71.ngrok-free.app'
+      'pixelstechfest.in'
     ]
   }
 })
