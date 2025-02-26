@@ -224,6 +224,92 @@ export const eventData = [
             "Any misconduct, including arguing with judges or fellow participants, will result in disqualification."
           ]
         }
+      },
+      {
+        name: "Code Sharks",
+        time: "5-10 minutes per pitch",
+        venue: "Classroom",
+        participants: "Teams of 2-5",
+        entryFee: "₹50 per participant",
+        prizes: "Certificates",
+        description:
+          "Teams pitch an original and innovative tech idea to judges.",
+        mode: "Offline",
+        type: "Team (2-5 members)",
+        prizeMoney: { first: "₹700", second: "₹300" },
+        minimumParticipation: "10 teams",
+        rules: {
+          general: [
+            "Follow all instructions given by the event organizers.",
+            "Each team must consist of 2-5 participants.",
+            "Teams must present an original and innovative idea; plagiarism will result in disqualification.",
+            "Judges' decisions are final and binding."
+          ],
+          registrationAndOrientation: [
+            "Teams must verify their registration and pay the ₹50 entry fee per participant.",
+            "A briefing will be given on the rules, evaluation criteria, and presentation format.",
+            "Teams will be assigned an order for their pitch presentation."
+          ],
+          game: [
+            "Each team will have 5-10 minutes to present their idea.",
+            "Teams must cover the problem, solution, tech stack, feasibility, and market potential in their pitch.",
+            "Judges may ask questions, engage in mock negotiations, or challenge the idea’s viability.",
+            "Teams may use slides, prototypes, or visual aids but must bring their own devices.",
+            "Volunteers will ensure smooth transitions and enforce time limits."
+          ],
+          winningCriteria: [
+            "Creativity (Originality and innovation of the idea)",
+            "Feasibility (Practicality and ease of implementation)",
+            "Market Potential (Demand and usefulness in the real world)",
+            "Presentation (Clarity, confidence, and engagement)",
+            "In case of a tie, judges may ask a quick tie-breaker question or request a brief problem-solving response."
+          ],
+          safetyAndConduct: [
+            "Participants must act professionally and respect fellow participants and judges.",
+            "Any misconduct, including arguing with judges or disrupting the event, will result in disqualification."
+          ]
+        }
+      },
+      {
+        name: "Hardwire Rapidfire",
+        time: "30 minutes",
+        venue: "E-Sports Arena",
+        participants: "Single",
+        entryFee: "₹30",
+        prizes: "Medals/Certificates",
+        description:
+          "Contestants assemble a disconnected PC, turn it on, and execute a provided program. The fastest five from the first round proceed to a more challenging second round.",
+        mode: "Offline",
+        type: "Individual",
+        prizeMoney: { first: "₹400", second: "₹200" },
+        minimumParticipation: "20 participants",
+        rules: {
+          general: [
+            "Follow all instructions given by the event organizers.",
+            "Participants must assemble and power on a disconnected PC within the given time.",
+            "In Round 2, participants must troubleshoot hardware issues or replace components.",
+            "Judges' decisions are final and binding."
+          ],
+          registrationAndOrientation: [
+            "Participants must verify their registration and pay the ₹30 entry fee.",
+            "A briefing will be given on the competition format, rules, and evaluation criteria.",
+            "Participants will be assigned a workstation for the challenge."
+          ],
+          game: [
+            "Round 1: Participants must assemble the disconnected PC, power it on, and execute a provided program. The top five fastest and most accurate participants qualify for Round 2.",
+            "Round 2: Participants must complete a more complex hardware task, such as replacing or reseating a hardware component or identifying and fixing a basic hardware issue (e.g., reconnecting a cable). The fastest and most accurate participant wins."
+          ],
+          winningCriteria: [
+            "Speed (Time taken to complete the task)",
+            "Accuracy (Correct assembly and execution)",
+            "Problem-Solving Skills (For troubleshooting tasks in Round 2)",
+            "In case of a tie, an additional quick hardware task may be assigned."
+          ],
+          safetyAndConduct: [
+            "Participants must handle all hardware components responsibly to avoid damage.",
+            "Any form of external assistance, tampering, or misconduct will result in disqualification."
+          ]
+        }
       }
     ]
   },
@@ -324,6 +410,77 @@ export const eventData = [
             "Participants must bring their own materials unless provided.",
             "Judges will evaluate based on creativity, technique, and visual appeal.",
             "No pre-made sketches or tracing is allowed."
+          ]
+        }
+      },
+      {
+        name: "Snap Tales",
+        time: "10 minutes for snapshots; 20 minutes for story creation",
+        venue: "Campus",
+        participants: "Single",
+        entryFee: "₹20",
+        prizes: "Certificates for top 3 stories",
+        description:
+          "Participants take five original snapshots around the campus and create a story.",
+        mode: "Offline",
+        type: "Individual",
+        prizeMoney: { first: "Certificates" },
+        minimumParticipation: "Not specified",
+        rules: {
+          game: [
+            "Participants must take five original snapshots around the campus.",
+            "The snapshots should be connected through a creative story.",
+            "The story can be humorous, dramatic, or emotional.",
+            "Alternatively, participants can create a 30-second reel instead of a story.",
+            "The final submission will be judged on creativity, storytelling, and relevance.",
+            "No pre-existing images or AI-generated content allowed."
+          ]
+        }
+      },
+      {
+        name: "Meme Mastermind",
+        time: "15-20 minutes",
+        venue: "Main Ground",
+        participants: "Single",
+        entryFee: "₹10 per participant",
+        prizes: "Certificates for top 3 memes",
+        description:
+          "Participants create memes based on provided themes. Memes can be made using digital tools or hand-drawn.",
+        mode: "Offline",
+        type: "Individual",
+        prizeMoney: { first: "Certificates" },
+        minimumParticipation: "Not specified",
+        rules: {
+          game: [
+            "Participants will be given a theme (e.g., 'College Life' or 'Tech Struggles').",
+            "Memes can be created digitally or hand-drawn.",
+            "No offensive, inappropriate, or plagiarized content is allowed.",
+            "Memes will be judged based on humor, creativity, and relevance to the theme.",
+            "Participants must submit their meme within the time limit."
+          ]
+        }
+      },
+      {
+        name: "Trash to Treasure",
+        time: "45 minutes",
+        venue: "Not specified",
+        participants: "Single",
+        entryFee: "₹50",
+        prizes: "Certificates for the most innovative creations",
+        description:
+          "Participants transform provided e-waste into creative or functional items.",
+        mode: "Offline",
+        type: "Individual",
+        prizeMoney: { first: "Certificates" },
+        minimumParticipation: "Not specified",
+        rules: {
+          game: [
+            "Participants will receive old electronic items like cables, keyboards, and circuits.",
+            "The goal is to transform them into creative or functional items.",
+            "Judging will be based on innovation, usefulness, and aesthetics.",
+            "Participants can bring additional materials, but the main component must be from the provided e-waste.",
+            "No pre-made designs or external assistance allowed.",
+            "Final creations must be presented within the given time frame."
           ]
         }
       }
@@ -470,7 +627,7 @@ export const eventData = [
             "Live performance only – No pre-recorded mixes allowed.",
             "Judging criteria: Creativity, mixing skills, track selection, crowd engagement, and technical ability.",
             "Judges' decision is final – No disputes will be entertained.",
-            "Handle equipment with care – Any damage is the participant's responsibility.",
+            "Handle equipment with care – Any damage is the participant’s responsibility.",
             "Arrive 1 hour before the event – Latecomers may be disqualified."
           ],
           game: [
@@ -517,7 +674,7 @@ export const eventData = [
             "Red card: Player sent off, and the team plays with 2 players.",
             "Teams must report 10 minutes before their match.",
             "Misconduct by players or teams (fighting, abusive language, etc.) will lead to disqualification.",
-            "Referee's decision is final."
+            "Referee’s decision is final."
           ]
         }
       },
@@ -677,7 +834,7 @@ export const eventData = [
             "Final match will consist of 3 matches (Erangel, Sanhok, Miramar).",
             "Players are restricted to using phones only; the use of tablets is not permitted.",
             "If a player is found using mods or aim bots, the team will be disqualified from the event.",
-            "All players must download the required maps; if they get kicked out at the start of the event, it's their responsibility.",
+            "All players must download the required maps; if they get kicked out at the start of the event, it’s their responsibility.",
             "Ensure their device is fully charged.",
             "Point system: 1 point per kill."
           ],
@@ -739,7 +896,26 @@ export const eventData = [
           ]
         }
       },
-      
+      {
+        name: "Among Us",
+        time: "10-15 minutes per round",
+        venue: "E-Sports Arena",
+        participants: "Single or Teams of 4-10 players",
+        entryFee: "₹100 per participant",
+        prizes: "Certificates for top players or teams",
+        description:
+          "Social deduction game with task completion and impostor identification.",
+        mode: "Offline",
+        type: "Solo or Group",
+        prizeMoney: { first: "Certificates" },
+        minimumParticipation: "Not specified",
+        rules: {
+          game: [
+            "Standard Among Us rules apply.",
+            "Participants complete tasks while identifying impostors."
+          ]
+        }
+      },
       {
         name: "Stumble Guys",
         time: "10-15 minutes per match",

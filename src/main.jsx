@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
-// import PreEvent from "./components/Pre-event/PreEvent";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import LandingPage from "./pages/LandingPage";
-// import EventInfo from './components/DynamicEventsPage/EventInfo'
-// import DynamicEventsPage from "./components/DynamicEventsPage/DynamicEventsPage";
+import LandingPage from "./pages/LandingPage";
+import EventInfo from './components/DynamicEventsPage/EventInfo'
+import DynamicEventsPage from "./components/DynamicEventsPage/DynamicEventsPage";
+// import EventsPage from "./pages/EventsPage.jsx";
 
 const removePreloader = () => {
   const preloader = document.getElementById("preloader");
@@ -16,25 +16,24 @@ const removePreloader = () => {
   }
 };
 
-// Comment out the old router configuration
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    // children: [
-    //   {
-    //     index: true,
-    //     element: <LandingPage />,
-    //   },
-    //   {
-    //     path: "events/:title",
-    //     element: <DynamicEventsPage />,
-    //   },
-    //   {
-    //     path: "/event-info/:title/:eventName",
-    //     element: <EventInfo />
-    //   }
-    // ],
+    children: [
+      {
+        index: true,
+        element: <LandingPage />,
+      },
+      {
+        path: "events/:title",
+        element: <DynamicEventsPage />,
+      },
+      {
+        path: "/event-info/:title/:eventName",
+        element: <EventInfo />
+      }
+    ],
   },
 ]);
 
