@@ -320,56 +320,22 @@ export const eventData = [
     backgroundImage: "https://picsum.photos/240/320?random=2",
     details: [
       {
-        name: "Squid Games",
-        time: "1.5-2 hours",
-        venue: "College Ground",
-        participants: "50 participants initially",
-        entryFee: "₹50 per participant",
-        prizes: "Trophy and Certificates for winners",
-        description:
-          "Inspired by the popular series, this event features elimination-based games.",
+        name: "Squid Game",
+        description: "A thrilling game based on the popular series.",
+        entryFee: "₹500",
         mode: "Offline",
-        type: "Individual (elimination-based)",
-        prizeMoney: { first: "Trophy", second: "Certificates" },
-        minimumParticipation: "50 participants",
+        type: "Group",
+        participants: "Teams of 5",
+        venue: "Main Ground",
+        time: "Today at 3 PM",
+        prizes: "Trophies and Certificates",
+        prizeMoney: { first: "₹2000", second: "₹1000" },
+        minimumParticipation: "5 teams",
         rules: {
-          rounds: [
-            {
-              name: "Red-Light, Green-Light",
-              description: [
-                "Participants move forward only when 'Green Light' is announced.",
-                "If anyone moves during 'Red Light,' they are eliminated.",
-                "Top 60 participants advance to the next round."
-              ]
-            },
-            {
-              name: "Tug of War",
-              description: [
-                "Participants will be divided into teams of 5.",
-                "Teams compete in a knockout-style Tug of War.",
-                "Winning teams proceed, eliminating half of the participants."
-              ]
-            },
-            {
-              name: "Marbles Challenge",
-              description: [
-                "Participants pair up and compete using marbles.",
-                "Games may include Tic-Tac-Toe, Coin Toss, or Rock-Paper-Scissors.",
-                "Winners advance to the final round."
-              ]
-            },
-            {
-              name: "Judgment Day",
-              description: [
-                "A skill-based challenge (e.g., solving a puzzle or a reflex-based task).",
-                "The participant who completes the challenge first or with the highest accuracy is declared the winner."
-              ]
-            }
-          ],
-          general: [
-            "Follow all instructions given by the event organizers.",
-            "Participants must adhere to the rules of each round.",
-            "Any form of cheating or misconduct will result in immediate disqualification."
+          game: [
+            "Rule 1",
+            "Rule 2",
+            // other rules...
           ]
         }
       },
