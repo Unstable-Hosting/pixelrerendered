@@ -8,6 +8,7 @@ export const eventData = [
     details: [
       {
         name: "Tech Escape Room",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfdi1Ggt2zqrPpoWUafhoerULBwauuvfctDeq7DO0k2YZEEpg/viewform?usp=header",
         time: "45 minutes",
         venue: "Computer Lab",
         participants: "Teams of 4-6",
@@ -51,6 +52,7 @@ export const eventData = [
       },
       {
         name: "Prompt Engineering",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZxKRoEHdhjosr9nfP-iP43oG9NKCPt4Ur2V6aQWzjbhIZFA/viewform?usp=header",
         time: "15 minutes",
         venue: "Lab 1",
         participants: "Single",
@@ -94,6 +96,7 @@ export const eventData = [
       },
       {
         name: "HTML Glow-Up",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScBdzK3ZInrck4GoDegaM-F5AWVGfFMgafkoiIPgzo4RKbLcw/viewform?usp=header",
         time: "15 minutes",
         venue: "Lab 2",
         participants: "Single",
@@ -136,51 +139,8 @@ export const eventData = [
         }
       },
       {
-        name: "Blind Coding",
-        time: "20-25 minutes",
-        venue: "Lab 3",
-        participants: "Single",
-        entryFee: "₹20",
-        prizes: "Certificate and Medal",
-        description:
-          "Participants write code with the monitor turned off. Afterward, a volunteer checks the code's accuracy. Judging focuses on functionality, logic, and syntax.",
-        mode: "Offline",
-        type: "Individual",
-        prizeMoney: { first: "₹200", second: "₹100" },
-        minimumParticipation: "15 participants",
-        rules: {
-          general: [
-            "Follow all instructions given by the event organizers.",
-            "Participants must write code without seeing the screen.",
-            "No external aids such as notes, mobile devices, or IDE auto-suggestions are allowed.",
-            "Code will be evaluated based on functionality, logic, and syntax correctness."
-          ],
-          registrationAndOrientation: [
-            "Participants must verify their registration and pay the ₹20 entry fee.",
-            "A briefing will be given on the rules, evaluation criteria, and time limit."
-          ],
-          game: [
-            "Each participant will receive a coding challenge or task.",
-            "Participants must rely on memory, logic, and keyboard skills to write the code.",
-            "The monitor will remain turned off or covered during the coding phase.",
-            "Participants will have 20-25 minutes to complete the challenge.",
-            "Volunteers will ensure participants follow the rules and assist with technical issues.",
-            "Code must be submitted immediately after the timer ends."
-          ],
-          winningCriteria: [
-            "Functionality (whether the code produces the correct output)",
-            "Logic (the overall approach and problem-solving strategy)",
-            "Syntax Correctness (proper use of language syntax)",
-            "In case of a tie, an additional quick blind coding task may be assigned."
-          ],
-          safetyAndConduct: [
-            "Participants must act responsibly and avoid any disruptive behavior.",
-            "Any misconduct, including arguing with judges or fellow participants, will result in disqualification."
-          ]
-        }
-      },
-      {
         name: "Bug Relay",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSckAvqENnDHlylJ3JGTJFAzq-a_pp54DEC8jUzOThDXVzNFvg/viewform?usp=header",
         time: "20 minutes",
         venue: "Lab",
         participants: "Teams of 3",
@@ -226,88 +186,50 @@ export const eventData = [
         }
       },
       {
-        name: "Code Sharks",
-        time: "5-10 minutes per pitch",
-        venue: "Classroom",
-        participants: "Teams of 2-5",
-        entryFee: "₹50 per participant",
+        name: "UI/UX Designing",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSefYwIfBm05dEEDlyTk0baRIGGlPvzyseBzMqOko7jaJZUCcw/viewform?usp=header",
+        time: "60 minutes",
+        venue: "Lab",
+        participants: "Single",
+        entryFee: "₹50 per team",
         prizes: "Certificates",
         description:
-          "Teams pitch an original and innovative tech idea to judges.",
+          "Teams debug code in a relay format, passing progress to the next member.",
         mode: "Offline",
-        type: "Team (2-5 members)",
-        prizeMoney: { first: "₹700", second: "₹300" },
-        minimumParticipation: "10 teams",
+        type: "Team (3 members)",
+        prizeMoney: { first: "₹500", second: "₹250" },
+        minimumParticipation: "15 participants",
         rules: {
           general: [
             "Follow all instructions given by the event organizers.",
-            "Each team must consist of 2-5 participants.",
-            "Teams must present an original and innovative idea; plagiarism will result in disqualification.",
-            "Judges' decisions are final and binding."
+            "Each team must brainstorm and design a UI/UX prototype within the given time limit (e.g., 60 minutes).",
+            "After the design phase, teams must present their design choices and user experience flow to the judges.",
+            "Teams must complete their design using the provided tools (e.g., Figma, Adobe XD, Sketch) without external pre-made templates.",
+            "The use of external aids (mobile devices, pre-made assets, AI-generated designs) is strictly prohibited unless specified.",
+            "Any attempt to manipulate or cheat the evaluation process will lead to disqualification.",
           ],
           registrationAndOrientation: [
-            "Teams must verify their registration and pay the ₹50 entry fee per participant.",
-            "A briefing will be given on the rules, evaluation criteria, and presentation format.",
-            "Teams will be assigned an order for their pitch presentation."
+            "Teams must verify their registration and pay the ₹50 entry fee.",
+            "A briefing will be given on the rules, evaluation criteria, and time limits."
           ],
-          game: [
-            "Each team will have 5-10 minutes to present their idea.",
-            "Teams must cover the problem, solution, tech stack, feasibility, and market potential in their pitch.",
-            "Judges may ask questions, engage in mock negotiations, or challenge the idea’s viability.",
-            "Teams may use slides, prototypes, or visual aids but must bring their own devices.",
-            "Volunteers will ensure smooth transitions and enforce time limits."
+          "game": [
+            "Each participant will be given a design challenge with specific requirements and constraints.",
+            "The participant must create a UI/UX prototype within the allotted time (e.g., 60 minutes).",
+            "The design should follow usability principles, accessibility guidelines, and a given theme (if any).",
+            "Once the time is up, the participant must submit their design for evaluation.",
+            "Judges will review the designs based on creativity, user experience, and adherence to the given challenge.",
+            "No pre-made templates or external assets (unless provided by the organizers) are allowed."
           ],
-          winningCriteria: [
-            "Creativity (Originality and innovation of the idea)",
-            "Feasibility (Practicality and ease of implementation)",
-            "Market Potential (Demand and usefulness in the real world)",
-            "Presentation (Clarity, confidence, and engagement)",
-            "In case of a tie, judges may ask a quick tie-breaker question or request a brief problem-solving response."
+          "winningCriteria": [
+            "Creativity (originality and uniqueness of the design)",
+            "Usability (how intuitive and user-friendly the design is)",
+            "Visual Appeal (aesthetics, color schemes, typography, and layout)",
+            "Accessibility (adherence to accessibility best practices)",
+            "In case of a tie, participants may be given an additional mini-challenge to refine or justify their design choices within 5 minutes."
           ],
-          safetyAndConduct: [
-            "Participants must act professionally and respect fellow participants and judges.",
-            "Any misconduct, including arguing with judges or disrupting the event, will result in disqualification."
-          ]
-        }
-      },
-      {
-        name: "Hardwire Rapidfire",
-        time: "30 minutes",
-        venue: "E-Sports Arena",
-        participants: "Single",
-        entryFee: "₹30",
-        prizes: "Medals/Certificates",
-        description:
-          "Contestants assemble a disconnected PC, turn it on, and execute a provided program. The fastest five from the first round proceed to a more challenging second round.",
-        mode: "Offline",
-        type: "Individual",
-        prizeMoney: { first: "₹400", second: "₹200" },
-        minimumParticipation: "20 participants",
-        rules: {
-          general: [
-            "Follow all instructions given by the event organizers.",
-            "Participants must assemble and power on a disconnected PC within the given time.",
-            "In Round 2, participants must troubleshoot hardware issues or replace components.",
-            "Judges' decisions are final and binding."
-          ],
-          registrationAndOrientation: [
-            "Participants must verify their registration and pay the ₹30 entry fee.",
-            "A briefing will be given on the competition format, rules, and evaluation criteria.",
-            "Participants will be assigned a workstation for the challenge."
-          ],
-          game: [
-            "Round 1: Participants must assemble the disconnected PC, power it on, and execute a provided program. The top five fastest and most accurate participants qualify for Round 2.",
-            "Round 2: Participants must complete a more complex hardware task, such as replacing or reseating a hardware component or identifying and fixing a basic hardware issue (e.g., reconnecting a cable). The fastest and most accurate participant wins."
-          ],
-          winningCriteria: [
-            "Speed (Time taken to complete the task)",
-            "Accuracy (Correct assembly and execution)",
-            "Problem-Solving Skills (For troubleshooting tasks in Round 2)",
-            "In case of a tie, an additional quick hardware task may be assigned."
-          ],
-          safetyAndConduct: [
-            "Participants must handle all hardware components responsibly to avoid damage.",
-            "Any form of external assistance, tampering, or misconduct will result in disqualification."
+          "safetyAndConduct": [
+            "Participants must act professionally and follow ethical design practices.",
+            "Any misconduct, including plagiarism, disrespectful behavior, or failure to follow competition rules, will result in disqualification."
           ]
         }
       }
@@ -321,6 +243,7 @@ export const eventData = [
     details: [
       {
         name: "Squid Game",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSd9GUdujWUicqsaaagxi9cwi2BYhzElRUYah-H3YHwq_h6Hzw/viewform?usp=header",
         description: "A thrilling game based on the popular series.",
         entryFee: "₹500",
         mode: "Offline",
@@ -341,6 +264,7 @@ export const eventData = [
       },
       {
         name: "Human Ludo",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdLQAoLSwJIl9XhfHaCt2ZYD5YPb-Z6KXK39BNWgUJE35Inpw/viewform?usp=header",
         time: "15 minutes",
         venue: "Main Ground",
         participants: "Teams of 4",
@@ -368,6 +292,7 @@ export const eventData = [
       },
       {
         name: "Treasure Hunt",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSf5MCwMTZ20t-hD3y82AZ46-06Bj2APqILmdG-D_YUhlwNrVA/viewform?usp=header",
         time: "45 minutes",
         venue: "College Ground",
         participants: "Solo",
@@ -392,6 +317,7 @@ export const eventData = [
       },
       {
         name: "Beyond the Brush",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScuxZ_GpzM0mJ2PiNc50jFDmOYyLA6KXhtGTpyNSSkcrYDF4A/viewform?usp=header",
         time: "30 minutes",
         venue: "Main Ground",
         participants: "Single",
@@ -412,77 +338,6 @@ export const eventData = [
             "No pre-made sketches or tracing is allowed."
           ]
         }
-      },
-      {
-        name: "Snap Tales",
-        time: "10 minutes for snapshots; 20 minutes for story creation",
-        venue: "Campus",
-        participants: "Single",
-        entryFee: "₹20",
-        prizes: "Certificates for top 3 stories",
-        description:
-          "Participants take five original snapshots around the campus and create a story.",
-        mode: "Offline",
-        type: "Individual",
-        prizeMoney: { first: "Certificates" },
-        minimumParticipation: "Not specified",
-        rules: {
-          game: [
-            "Participants must take five original snapshots around the campus.",
-            "The snapshots should be connected through a creative story.",
-            "The story can be humorous, dramatic, or emotional.",
-            "Alternatively, participants can create a 30-second reel instead of a story.",
-            "The final submission will be judged on creativity, storytelling, and relevance.",
-            "No pre-existing images or AI-generated content allowed."
-          ]
-        }
-      },
-      {
-        name: "Meme Mastermind",
-        time: "15-20 minutes",
-        venue: "Main Ground",
-        participants: "Single",
-        entryFee: "₹10 per participant",
-        prizes: "Certificates for top 3 memes",
-        description:
-          "Participants create memes based on provided themes. Memes can be made using digital tools or hand-drawn.",
-        mode: "Offline",
-        type: "Individual",
-        prizeMoney: { first: "Certificates" },
-        minimumParticipation: "Not specified",
-        rules: {
-          game: [
-            "Participants will be given a theme (e.g., 'College Life' or 'Tech Struggles').",
-            "Memes can be created digitally or hand-drawn.",
-            "No offensive, inappropriate, or plagiarized content is allowed.",
-            "Memes will be judged based on humor, creativity, and relevance to the theme.",
-            "Participants must submit their meme within the time limit."
-          ]
-        }
-      },
-      {
-        name: "Trash to Treasure",
-        time: "45 minutes",
-        venue: "Not specified",
-        participants: "Single",
-        entryFee: "₹50",
-        prizes: "Certificates for the most innovative creations",
-        description:
-          "Participants transform provided e-waste into creative or functional items.",
-        mode: "Offline",
-        type: "Individual",
-        prizeMoney: { first: "Certificates" },
-        minimumParticipation: "Not specified",
-        rules: {
-          game: [
-            "Participants will receive old electronic items like cables, keyboards, and circuits.",
-            "The goal is to transform them into creative or functional items.",
-            "Judging will be based on innovation, usefulness, and aesthetics.",
-            "Participants can bring additional materials, but the main component must be from the provided e-waste.",
-            "No pre-made designs or external assistance allowed.",
-            "Final creations must be presented within the given time frame."
-          ]
-        }
       }
     ]
   },
@@ -493,7 +348,8 @@ export const eventData = [
     backgroundImage: "https://picsum.photos/240/320?random=3",
     details: [
       {
-        name: "Pixel's Got Latent",
+        name: "Pixel's Got Vocal",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSduVsWcqyVmGEWgxZjr_5jO_989sKW6V5fgZfia38CV-PvoWg/viewform?usp=header",
         time: "3-5 minutes per performance",
         venue: "Auditorium",
         participants: "Single or Teams (3-6 for groups)",
@@ -522,37 +378,41 @@ export const eventData = [
         }
       },
       {
-        name: "Laughter Mania",
-        time: "5 minutes per act",
+        name: "Battle of Bands",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdg40qAK2I0-z0AgWEMi0UVcsm9G6H-I0nojKMCcB_IdLChzw/viewform?usp=header",
+        time: "6 minutes per act",
         venue: "Auditorium",
-        participants: "Single",
-        entryFee: "₹30",
+        participants: "Team of 3",
+        entryFee: "₹500",
         prizes: "Certificates for top 3 performers",
         description:
-          "Participants deliver humorous acts based on observations, college life, or general experiences.",
-        mode: "Online/Offline",
-        type: "Solo",
-        prizeMoney: { first: "₹500" },
-        minimumParticipation: "5 participants",
-        rules: {
-          general: [
-            "No participant may point out any specific individual or religion in any manner.",
-            "Participants will be judged based on content, fluency, spontaneity, presentation, and sense of humour.",
-            "Exceeding the time limit (5 minutes) will result in negative marking.",
-            "Performances must be free from foul language, abusive words, or inappropriate gestures.",
-            "The use of offensive jokes, hate speech, or disrespect towards any community will result in immediate disqualification.",
-            "Participants must reach the venue at least 1 hour before the event begins.",
+          "An electrifying showdown of talent, energy, and music! Bands will compete to own the stage and win the ultimate title. Who will steal the spotlight? Let the battle begin! 🔥🎶",
+        mode: "Offline",
+        type: "Team",
+        prizeMoney: { first: "₹2500" },
+        minimumParticipation: "5 Teams",
+        "rules": {
+          "general": [
+            "No participant may include offensive content, political remarks, or disrespect towards any community.",
+            "Bands will be judged based on musicality, stage presence, crowd engagement, originality, and technical skills.",
+            "Exceeding the time limit (6 minutes including setup & soundcheck) will result in negative marking.",
+            "Performances must be free from foul language, offensive lyrics, or inappropriate gestures.",
+            "The use of pre-recorded backing tracks (except for electronic elements explicitly allowed) is prohibited.",
+            "Participants must reach the venue at least 1 hour before the event begins for setup and soundcheck.",
             "All participants must adhere strictly to these rules. The organizing committee reserves the right to take necessary action if required."
           ],
-          game: [
-            "Participants must perform their own original stand-up comedy material.",
-            "Time Limit: 5 minutes per participant.",
-            "A maximum of 3 entries per contingent (college) is allowed."
+          "game": [
+            "Each band must have a minimum of 3 members.",
+            "Each band gets 6 minutes to perform, including setup and soundcheck.",
+            "Both original compositions and covers are allowed, but song selection must be appropriate for a college audience.",
+            "Basic sound equipment (mics, amplifiers, drum kit) will be provided; bands must bring their own instruments.",
+            "Bands must inform the organizers in advance if they require any special technical setup."
           ]
         }
       },
       {
         name: "Dil Dhadakne Do",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScXYQE9YmjpXM92rA5BGXQeITBConfJ_qOf6Z-ldhxTsFd__w/viewform?usp=header",
         time: "30-45 minutes",
         venue: "College Ground",
         participants: "Single",
@@ -574,6 +434,7 @@ export const eventData = [
       },
       {
         name: "Fashion Show",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScDsr5viMHLeUfNOXSwZYGbisOCX9YpSWNo3IOejBteoqZVYw/viewform?usp=header",
         time: "30-45 minutes",
         venue: "Main Ground",
         participants: "Teams of 3-4",
@@ -606,6 +467,7 @@ export const eventData = [
       },
       {
         name: "War of DJs",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSednLA14INPWlhKybvl3GoOSH_V5TTGnTRnk_3igLyf1xVyAg/viewform?usp=header",
         time: "10 minutes per performance",
         venue: "Auditorium",
         participants: "Single",
@@ -646,6 +508,7 @@ export const eventData = [
     details: [
       {
         name: "Futsal (5v5)",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSe2hD4au0UTDTWZ1Sxp12QpcIaDVqSVdfN_kno-vpiPi2QAxg/viewform?usp=header",
         time: "14 minutes total",
         venue: "Sports Complex",
         participants: "Teams of 5 players",
@@ -680,6 +543,7 @@ export const eventData = [
       },
       {
         name: "Box Cricket (6v6)",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSefI611jXIXEPDx-nMAKtX7CFRjJVb_EXHut5yUF6pkm87WAw/viewform?usp=header",
         time: "20 minutes per match",
         venue: "Sports Complex",
         participants: "Teams of 6 players",
@@ -711,6 +575,7 @@ export const eventData = [
       },
       {
         name: "Chess",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSc5hn4U_nk5hHUPnb8Bct-58ZOpzbz17muZ_tPXwf-9cCMstQ/viewform?usp=header",
         time: "15 points per set, best of 3 sets",
         venue: "Sports Complex",
         participants: "Teams of 5 players",
@@ -730,6 +595,7 @@ export const eventData = [
       },
       {
         name: "Badminton",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSc42mhbKDC7VS69_hkuWvZ6SrndZllUdF7RFYOXgHlKt5Qg5w/viewform?usp=header",
         time: "20-minute halves (40 minutes total)",
         venue: "Sports Complex",
         participants: "Teams of 11 players",
@@ -756,6 +622,7 @@ export const eventData = [
       },
       {
         name: "Carrom",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdaoKZ_DRl8bIaqlDzdh6xuT0n5KF0KASixqLIjBbEhqVM6_g/viewform?usp=header",
         time: "5-over matches (approximately 45 minutes)",
         venue: "Sports Complex",
         participants: "Teams of 11 players",
@@ -777,6 +644,39 @@ export const eventData = [
             "A player can only pocket the queen after pocketing at least one of their own coins."
           ]
         }
+      },
+      {
+        name: "Table Tennis",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScmUBbUv32e1QXXZd34FaNowIN4daFx4x074bobk-Go2EH9ZQ/viewform?usp=header",
+        time: "5-over matches (approximately 45 minutes)",
+        venue: "Sports Complex",
+        participants: "Single",
+        entryFee: "₹100 per team",
+        prizes:
+          "Trophies, Certificates, Awards for Best Batsman and Best Bowler",
+        description:
+          "Show off your speed and precision in our thrilling table tennis tournament! Players will compete in a 1v1 format, following standard rules. Outsmart your opponent with skillful shots and quick reflexes to advance to the next round! 🏓🔥",
+        mode: "Offline",
+        type: "Solo",
+        prizeMoney: { first: "₹500" },
+        minimumParticipation: "5 participants",
+        rules: {
+          "game": [
+            "Matches follow the best-of-3 sets format, with finals played in best-of-5 sets.",
+            "Each set is played to 11 points, and a player must win by at least 2 points.",
+            "Players must switch sides after each set.",
+            "Each player/team is allowed one timeout (30 seconds) per match.",
+            "The ball must be tossed at least 16 cm vertically during service.",
+            "A legal serve must be made behind the baseline and above the table surface.",
+            "Doubles matches require teammates to alternate shots during a rally.",
+            "If the score reaches 10-10, deuce rules apply (win by 2 points).",
+            "Touching the table with a free hand during play results in a point loss.",
+            "If the ball touches the net on a serve but lands correctly, it is a let serve and must be replayed.",
+            "Players must report at least 10 minutes before their scheduled match.",
+            "Misconduct, including arguing with the referee or unsportsmanlike behavior, will lead to disqualification.",
+            "Referee’s decision is final."
+          ]
+        }
       }
     ]
   },
@@ -788,6 +688,7 @@ export const eventData = [
     details: [
       {
         name: "Valorant",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScrvGMhcciCHE2gXaOXhyXV3Cs4z04UAZD8yQksys1G1i26Mg/viewform?usp=header",
         time: "30 minutes per match",
         venue: "E-Sports Arena",
         participants: "Teams of 5 players",
@@ -816,7 +717,8 @@ export const eventData = [
         }
       },
       {
-        name: "COD/BGMI",
+        name: "BGMI",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSc088uC5nCZk9ao4jNsTV0QsQhbyjvmnkNeyipOo83decP4gg/viewform?usp=header",
         time: "30-40 minutes per match",
         venue: "E-Sports Arena",
         participants: "Teams of 4 players",
@@ -850,6 +752,7 @@ export const eventData = [
       },
       {
         name: "FIFA (2v2)",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeDVq_m1osG2isDuLU2oQoEBawDSfmYs3_J5hIBemND9_hFQA/viewform?usp=header",
         time: "10-15 minutes per match",
         venue: "E-Sports Arena",
         participants: "Teams of 2 players",
@@ -874,6 +777,7 @@ export const eventData = [
       },
       {
         name: "Mortal Kombat (1v1)",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSevUe6yWtMrF4qfGjHMfVaV8mK98-RI-DMy_OQ7-ZvXFZ3tyw/viewform?usp=header",
         time: "5-10 minutes per match",
         venue: "E-Sports Arena",
         participants: "Single",
@@ -897,27 +801,8 @@ export const eventData = [
         }
       },
       {
-        name: "Among Us",
-        time: "10-15 minutes per round",
-        venue: "E-Sports Arena",
-        participants: "Single or Teams of 4-10 players",
-        entryFee: "₹100 per participant",
-        prizes: "Certificates for top players or teams",
-        description:
-          "Social deduction game with task completion and impostor identification.",
-        mode: "Offline",
-        type: "Solo or Group",
-        prizeMoney: { first: "Certificates" },
-        minimumParticipation: "Not specified",
-        rules: {
-          game: [
-            "Standard Among Us rules apply.",
-            "Participants complete tasks while identifying impostors."
-          ]
-        }
-      },
-      {
         name: "Stumble Guys",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSf7E5hPXHr2ZEDuCyJbCjBpi9MdgZKQrTasnMSfmDO_mwIgOw/viewform?usp=header",
         time: "10-15 minutes per match",
         venue: "E-Sports Arena",
         participants: "Single",
@@ -938,52 +823,52 @@ export const eventData = [
       }
     ]
   },
-  {
-    title: "Fun Events",
-    description:
-      "Engage in fun and exciting events that test your skills and have a good time.",
-    backgroundImage: "https://picsum.photos/240/320?random=6",
-    details: [
-      {
-        name: "Minute to Win It",
-        time: "15-20 minutes",
-        venue: "Main Ground",
-        participants: "Single",
-        entryFee: "₹10 per participant",
-        prizes: "Certificates for top 3 scorers",
-        description:
-          "Quick challenges completed in under a minute, testing speed and accuracy.",
-        mode: "Offline",
-        type: "Solo",
-        prizeMoney: { first: "Certificates" },
-        minimumParticipation: "Not specified",
-        rules: {
-          game: [
-            "Participants complete quick challenges within a minute.",
-            "Judged on speed and accuracy."
-          ]
-        }
-      },
-      {
-        name: "Mystery Box",
-        time: "5 minutes per team",
-        venue: "Main Ground",
-        participants: "Teams of 3-4",
-        entryFee: "₹50 per participant",
-        prizes: "Certificates for winners",
-        description:
-          "Teams open a box with items hinting at a Bollywood song and must perform it.",
-        mode: "Offline",
-        type: "Group",
-        prizeMoney: { first: "Certificates" },
-        minimumParticipation: "Not specified",
-        rules: {
-          game: [
-            "Teams open a box with items hinting at a Bollywood song.",
-            "Teams must perform the song within 5 minutes."
-          ]
-        }
-      }
-    ]
-  }
+  // {
+  //   title: "Fun Events",
+  //   description:
+  //     "Engage in fun and exciting events that test your skills and have a good time.",
+  //   backgroundImage: "https://picsum.photos/240/320?random=6",
+  //   details: [
+  //     {
+  //       name: "Minute to Win It",
+  //       time: "15-20 minutes",
+  //       venue: "Main Ground",
+  //       participants: "Single",
+  //       entryFee: "₹10 per participant",
+  //       prizes: "Certificates for top 3 scorers",
+  //       description:
+  //         "Quick challenges completed in under a minute, testing speed and accuracy.",
+  //       mode: "Offline",
+  //       type: "Solo",
+  //       prizeMoney: { first: "Certificates" },
+  //       minimumParticipation: "Not specified",
+  //       rules: {
+  //         game: [
+  //           "Participants complete quick challenges within a minute.",
+  //           "Judged on speed and accuracy."
+  //         ]
+  //       }
+  //     },
+  //     {
+  //       name: "Mystery Box",
+  //       time: "5 minutes per team",
+  //       venue: "Main Ground",
+  //       participants: "Teams of 3-4",
+  //       entryFee: "₹50 per participant",
+  //       prizes: "Certificates for winners",
+  //       description:
+  //         "Teams open a box with items hinting at a Bollywood song and must perform it.",
+  //       mode: "Offline",
+  //       type: "Group",
+  //       prizeMoney: { first: "Certificates" },
+  //       minimumParticipation: "Not specified",
+  //       rules: {
+  //         game: [
+  //           "Teams open a box with items hinting at a Bollywood song.",
+  //           "Teams must perform the song within 5 minutes."
+  //         ]
+  //       }
+  //     }
+  //   ]
+  // }
 ];

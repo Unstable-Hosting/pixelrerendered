@@ -32,6 +32,12 @@ const EventInfo = () => {
     );
   }
 
+  const handleRegistration = () => {
+    if (eventDetails.registrationLink) {
+      window.open(eventDetails.registrationLink, '_blank');
+    }
+  };
+
   return (
     <div className="event-info-page">
       <div className="event-info-container">
@@ -134,7 +140,7 @@ const EventInfo = () => {
           )}
         </div>
 
-        <button className="register-button">
+        <button className="register-button" onClick={handleRegistration}>
           Register Now
         </button>
       </div>
