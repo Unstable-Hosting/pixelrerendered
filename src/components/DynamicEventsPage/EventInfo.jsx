@@ -100,14 +100,14 @@ const EventInfo = () => {
               </div>
             </div>
 
-            <div className="event-info-section">
+{/*             <div className="event-info-section">
               <div className="info-label">
                 <p className="text-[1.2rem] font-[Orbitron]">Prizes</p>
               </div>
               <div className="info-value">
                 <p className="text-[1rem]">{eventDetails.prizes}</p>
               </div>
-            </div>
+            </div> */}
 
             {eventDetails.prizeMoney && (
               <div className="event-info-section">
@@ -124,7 +124,7 @@ const EventInfo = () => {
               </div>
             )}
 
-            {eventDetails.minimumParticipation && (
+{/*             {eventDetails.minimumParticipation && (
               <div className="event-info-section">
                 <div className="info-label">
                   <p className="text-[1.2rem] font-[Orbitron]">Minimum Participation</p>
@@ -133,7 +133,7 @@ const EventInfo = () => {
                   <p className="text-[1rem]">{eventDetails.minimumParticipation}</p>
                 </div>
               </div>
-            )}
+            )} */}
 
             <div className="event-info-section">
               <div className="info-label">
