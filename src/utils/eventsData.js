@@ -43,7 +43,7 @@ export const eventData = [
             "If no team completes the challenge, ranking will be based on progress made.",
             "In case of a tie, the team that solved the most puzzles will rank higher."
           ],
-          safetyAndConduct: [
+          safety: [
             "Participants must act responsibly and avoid disruptive behavior.",
             "Any misconduct, including damaging property or arguing with volunteers, will lead to disqualification.",
             "Follow all safety instructions provided by the organizers."
@@ -71,7 +71,7 @@ export const eventData = [
             "The use of mobile devices or external help is strictly prohibited.",
             "Any attempt to copy or manipulate the evaluation process will lead to disqualification."
           ],
-          registrationAndOrientation: [
+          registration: [
             "Participants must verify their registration and pay the ₹30 entry fee.",
             "A briefing will be given on the rules, evaluation criteria, and time limit."
           ],
@@ -88,7 +88,7 @@ export const eventData = [
             "Prompt Adherence (clarity and precision in addressing the prompt)",
             "In case of a tie, a tiebreaker round with a new prompt may be conducted."
           ],
-          safetyAndConduct: [
+          safety: [
             "Participants must act responsibly and avoid any disruptive behavior.",
             "Any misconduct, including arguing with judges or fellow participants, will result in disqualification."
           ]
@@ -115,7 +115,7 @@ export const eventData = [
             "Only CSS (inline, internal, or external) should be used to style the provided HTML page.",
             "Participants must complete their designs within the 15-minute time limit."
           ],
-          registrationAndOrientation: [
+          registration: [
             "Participants must verify their registration and pay the ₹40 entry fee.",
             "A briefing will be given on the rules, evaluation criteria, and time limit."
           ],
@@ -132,7 +132,7 @@ export const eventData = [
             "Technical Skill (proper use of CSS properties and techniques)",
             "In case of a tie, a quick styling task may be assigned as a tiebreaker."
           ],
-          safetyAndConduct: [
+          safety: [
             "Participants must act responsibly and avoid any disruptive behavior.",
             "Any misconduct, including arguing with judges or fellow participants, will result in disqualification."
           ]
@@ -161,7 +161,7 @@ export const eventData = [
             "The use of external aids (mobile devices, online compilers, AI tools) is strictly prohibited.",
             "Any attempt to manipulate or cheat the evaluation process will lead to disqualification."
           ],
-          registrationAndOrientation: [
+          registration: [
             "Teams must verify their registration and pay the ₹30 entry fee.",
             "A briefing will be given on the rules, evaluation criteria, and time limits."
           ],
@@ -179,7 +179,7 @@ export const eventData = [
             "Collaboration (how effectively the team worked together in relays)",
             "In case of a tie, a tie-breaker snippet with a strict 5-minute time limit may be assigned."
           ],
-          safetyAndConduct: [
+          safety: [
             "Participants must act responsibly and avoid any disruptive behaviour.",
             "Any misconduct, including arguing with judges or fellow participants, will result in disqualification."
           ]
@@ -208,7 +208,7 @@ export const eventData = [
             "The use of external aids (mobile devices, pre-made assets, AI-generated designs) is strictly prohibited unless specified.",
             "Any attempt to manipulate or cheat the evaluation process will lead to disqualification.",
           ],
-          registrationAndOrientation: [
+          registration: [
             "Teams must verify their registration and pay the ₹50 entry fee.",
             "A briefing will be given on the rules, evaluation criteria, and time limits."
           ],
@@ -227,7 +227,7 @@ export const eventData = [
             "Accessibility (adherence to accessibility best practices)",
             "In case of a tie, participants may be given an additional mini-challenge to refine or justify their design choices within 5 minutes."
           ],
-          "safetyAndConduct": [
+          safety: [
             "Participants must act professionally and follow ethical design practices.",
             "Any misconduct, including plagiarism, disrespectful behavior, or failure to follow competition rules, will result in disqualification."
           ]

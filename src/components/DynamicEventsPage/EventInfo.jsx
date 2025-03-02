@@ -47,48 +47,78 @@ const EventInfo = () => {
         <div className="event-details-grid">
           <div className="event-info-card">
             <div className="event-info-section">
-              <div className="info-label">Entry Fee</div>
-              <div className="info-value">{eventDetails.entryFee}</div>
+              <div className="info-label">
+                <p className="text-[1.2rem] font-[Orbitron]">Entry Fee</p>
+              </div>
+              <div className="info-value">
+                <p className="text-[1rem]">{eventDetails.entryFee}</p>
+              </div>
             </div>
 
             <div className="event-info-section">
-              <div className="info-label">Mode</div>
-              <div className="info-value">{eventDetails.mode}</div>
+              <div className="info-label">
+                <p className="text-[1.2rem] font-[Orbitron]">Mode</p>
+              </div>
+              <div className="info-value">
+                <p className="text-[1rem]">{eventDetails.mode}</p>
+              </div>
             </div>
 
             <div className="event-info-section">
-              <div className="info-label">Type</div>
-              <div className="info-value">{eventDetails.type}</div>
+              <div className="info-label">
+                <p className="text-[1.2rem] font-[Orbitron]">Type</p>
+              </div>
+              <div className="info-value">
+                <p className="text-[1rem]">{eventDetails.type}</p>
+              </div>
             </div>
 
             <div className="event-info-section">
-              <div className="info-label">Participants</div>
-              <div className="info-value">{eventDetails.participants}</div>
+              <div className="info-label">
+                <p className="text-[1.2rem] font-[Orbitron]">Participants</p>
+              </div>
+              <div className="info-value">
+                <p className="text-[1rem]">{eventDetails.participants}</p>
+              </div>
             </div>
 
             <div className="event-info-section">
-              <div className="info-label">Venue</div>
-              <div className="info-value">{eventDetails.venue}</div>
+              <div className="info-label">
+                <p className="text-[1.2rem] font-[Orbitron]">Venue</p>
+              </div>
+              <div className="info-value">
+                <p className="text-[1rem]">{eventDetails.venue}</p>
+              </div>
             </div>
 
             <div className="event-info-section">
-              <div className="info-label">Time</div>
-              <div className="info-value">{eventDetails.time}</div>
+              <div className="info-label">
+                <p className="text-[1.2rem] font-[Orbitron]">Time</p>
+              </div>
+              <div className="info-value">
+                <p className="text-[1rem]">{eventDetails.time}</p>
+              </div>
             </div>
 
             <div className="event-info-section">
-              <div className="info-label">Prizes</div>
-              <div className="info-value">{eventDetails.prizes}</div>
+              <div className="info-label">
+                <p className="text-[1.2rem] font-[Orbitron]">Prizes</p>
+              </div>
+              <div className="info-value">
+                <p className="text-[1rem]">{eventDetails.prizes}</p>
+              </div>
             </div>
 
             {eventDetails.prizeMoney && (
               <div className="event-info-section">
-                <div className="info-label">Prize Money</div>
+                <div className="info-label">
+                  <p className="text-[1.2rem] font-[Orbitron]">Prize Money</p>
+                </div>
                 <div className="info-value">
                   {Object.entries(eventDetails.prizeMoney).map(([position, prize]) => (
-                    <div key={position}>
+                    <p key={position} className="text-[1rem]">
                       {position}: {prize}
-                    </div>
+                    </p>
                   ))}
                 </div>
               </div>
@@ -96,14 +126,22 @@ const EventInfo = () => {
 
             {eventDetails.minimumParticipation && (
               <div className="event-info-section">
-                <div className="info-label">Minimum Participation</div>
-                <div className="info-value">{eventDetails.minimumParticipation}</div>
+                <div className="info-label">
+                  <p className="text-[1.2rem] font-[Orbitron]">Minimum Participation</p>
+                </div>
+                <div className="info-value">
+                  <p className="text-[1rem]">{eventDetails.minimumParticipation}</p>
+                </div>
               </div>
             )}
 
             <div className="event-info-section">
-              <div className="info-label">Description</div>
-              <div className="info-value">{eventDetails.description}</div>
+              <div className="info-label">
+                <p className="text-[1.2rem] font-[Orbitron]">Description</p>
+              </div>
+              <div className="info-value">
+                <p className="text-[1rem]">{eventDetails.description}</p>
+              </div>
             </div>
           </div>
 

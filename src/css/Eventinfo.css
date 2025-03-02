@@ -224,22 +224,61 @@
   letter-spacing: 0.5px;
 }
 
+
 .rules-list h4:first-child {
   margin-top: 0;
 }
 
 /* Media queries for rules section */
 @media (max-width: 768px) {
-  .rules-container {
-    grid-template-columns: 1fr;
+  .event-info-card {
+    background: rgba(17, 17, 17, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: fit-content;
   }
+  .event-details-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .rules-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
 
   .rules-category {
     grid-column: 1 / -1 !important;
   }
+  
+  .rules-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;  
+  }
 
   .rules-list li {
     padding: 0.8rem 0.8rem 0.8rem 2rem;
+  }
+
+  .info-label {
+    color: #00f2fe;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 1.5rem;
   }
 }
 
