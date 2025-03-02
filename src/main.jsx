@@ -4,12 +4,12 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import LandingPage from "./pages/LandingPage";
-import EventInfo from './components/DynamicEventsPage/EventInfo'
+import EventInfo from "./components/DynamicEventsPage/EventInfo";
 import DynamicEventsPage from "./components/DynamicEventsPage/DynamicEventsPage";
 // import EventsPage from "./pages/EventsPage.jsx";
 
 const removePreloader = () => {
-  const preloader = document.getElementById("preloader");
+  const preloader = document.getElementById("preloaderr");
   if (preloader) {
     preloader.style.opacity = "0";
     preloader.remove();
@@ -31,8 +31,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/event-info/:title/:eventName",
-        element: <EventInfo />
-      }
+        element: <EventInfo />,
+      },
     ],
   },
 ]);
