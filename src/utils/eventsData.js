@@ -509,9 +509,9 @@ export const eventData = [
       {
         name: "Futsal (3v3)",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSe2hD4au0UTDTWZ1Sxp12QpcIaDVqSVdfN_kno-vpiPi2QAxg/viewform?usp=header",
-        time: "14 minutes total",
+        time: "10 min game(5 min half with 1 break at half time)",
         venue: "Sports Complex",
-        participants: "Teams of 3 players",
+        participants: "Teams of 3+1 (Rolling sub)",
         entryFee: "₹500 per team",
         prizes: "Trophies and Special awards",
         description:
@@ -522,22 +522,22 @@ export const eventData = [
         minimumParticipation: "10 teams",
         rules: {
           game: [
-            "Game Format: 3v1 rolling sub.",
-            "Match Duration: 10 min game (5 min half with 1 break at half time).",
-            "Flat/Turf shoes must be worn. Studs not allowed.",
-            "No goalkeeper.",
-            "Handball inside D will be awarded penalty.",
-            "Penalty will be Goal to Goal.",
-            "Rolling substitution allowed, only when the ball is out of play.",
-            "Goals can be scored from any half.",
-            "Goals scored directly from kick-ins/corner/goal kick do not count.",
-            "Carpet passes from sidelines when ball out of field (No chip).",
-            "Fouls include handball, pushing, tackling from behind, etc.",
-            "Yellow card: 1-minute suspension for the player.",
-            "Red card: Player sent off, and the team plays with 2 players.",
-            "Teams must report 10 minutes before their match.",
-            "Misconduct by players or teams (fighting, abusive language, etc.) will lead to disqualification.",
-            "Referee's decision is final."
+           "Game Format: 3+1 rolling sub.",
+    "Match Duration: 10 min game (5 min half with 1 break at half time).",
+    "Flat/Turf shoes must be worn. Studs not allowed.",
+    "No goalkeeper.",
+    "Handball inside D will be awarded penalty.",
+    "Penalty will be Goal to Goal.",
+    "Rolling substitution allowed, only when the ball is out of play.",
+    "Goals can be scored from any half.",
+    "Goals scored directly from kick-ins/corner/goal kick do not count.",
+    "Carpet passes from sidelines when ball out of field (No chip).",
+    "Fouls include handball, pushing, tackling from behind, etc.",
+    "Yellow card: 1-minute suspension for the player.",
+    "Red card: Player sent off, and the team plays with 2 players.",
+    "Teams must report 10 minutes before their match.",
+    "Misconduct by players or teams (fighting, abusive language, etc.) will lead to disqualification.",
+    "Referee's decision is final."
           ]
         }
       },
