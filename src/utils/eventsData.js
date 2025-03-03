@@ -507,7 +507,7 @@ export const eventData = [
     backgroundImage: "https://picsum.photos/240/320?random=4",
     details: [
       {
-        name: "Futsal (5v5)",
+        name: "Futsal (3v3)",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSe2hD4au0UTDTWZ1Sxp12QpcIaDVqSVdfN_kno-vpiPi2QAxg/viewform?usp=header",
         time: "14 minutes total",
         venue: "Sports Complex",
