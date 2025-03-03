@@ -764,12 +764,12 @@ export const eventData = [
         }
       },
       {
-        name: "FIFA (2v2)",
+        name: "FIFA (1v1)",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeDVq_m1osG2isDuLU2oQoEBawDSfmYs3_J5hIBemND9_hFQA/viewform?usp=header",
         time: "10-15 minutes per match",
         venue: "E-Sports Arena",
         participants: "Solo",
-        entryFee: "₹150 per team",
+        entryFee: "₹150 ",
         prizes: "Certificates for top teams",
         description: "Football simulation with knockout-based tournament.",
         mode: "Offline",
