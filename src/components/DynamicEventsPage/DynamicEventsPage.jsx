@@ -24,8 +24,17 @@ const DynamicEventsPage = () => {
   }, [title]);
 
   const handleParticipateClick = (eventName) => {
-    console.log("Navigating to:", `/event-info/${encodeURIComponent(title)}/${encodeURIComponent(eventName)}`);
-    navigate(`/event-info/${encodeURIComponent(title)}/${encodeURIComponent(eventName)}`);
+    console.log(
+      "Navigating to:",
+      `/event-info/${encodeURIComponent(title)}/${encodeURIComponent(
+        eventName
+      )}`
+    );
+    navigate(
+      `/event-info/${encodeURIComponent(title)}/${encodeURIComponent(
+        eventName
+      )}`
+    );
   };
 
   if (loading) {
@@ -48,14 +57,14 @@ const DynamicEventsPage = () => {
             <h2 className="event-name">{detail.name}</h2>
             <div className="event-details">
               <p>
-                <strong>Time:</strong> {detail.time}
+                <strong>Date:</strong> {detail.date}
               </p>
               <p>
                 <strong>Venue:</strong> {detail.venue}
               </p>
             </div>
             <div className="event-description">{eventDetails.description}</div>
-            <button 
+            <button
               className="participate-button"
               onClick={() => handleParticipateClick(detail.name)}
             >

@@ -11,7 +11,8 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSfdi1Ggt2zqrPpoWUafhoerULBwauuvfctDeq7DO0k2YZEEpg/viewform?usp=header",
         time: "45 minutes",
-        venue: "Computer Lab",
+        date: "8th March",
+        venue: "Computer Centre",
         participants: "Teams of 3",
         entryFee: "₹150 per team",
         prizes: "Trophy and Certificates",
@@ -56,6 +57,7 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSdZxKRoEHdhjosr9nfP-iP43oG9NKCPt4Ur2V6aQWzjbhIZFA/viewform?usp=header",
         time: "15 minutes",
+        date: "7th March",
         venue: "Lab 1",
         participants: "Single",
         entryFee: "₹50",
@@ -101,6 +103,7 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLScBdzK3ZInrck4GoDegaM-F5AWVGfFMgafkoiIPgzo4RKbLcw/viewform?usp=header",
         time: "15 minutes",
+        date: "7th March",
         venue: "Lab 2",
         participants: "Single",
         entryFee: "₹50",
@@ -146,7 +149,8 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSckAvqENnDHlylJ3JGTJFAzq-a_pp54DEC8jUzOThDXVzNFvg/viewform?usp=header",
         time: "20 minutes",
-        venue: "Lab",
+        date: "7th March",
+        venue: "Lab 1",
         participants: "Teams of 2-3",
         entryFee: "₹150 per team",
         prizes: "Certificates",
@@ -194,7 +198,8 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSefYwIfBm05dEEDlyTk0baRIGGlPvzyseBzMqOko7jaJZUCcw/viewform?usp=header",
         time: "60 minutes",
-        venue: "Lab",
+        date: "7th March",
+        venue: "Lab 2",
         participants: "Single",
         entryFee: "₹50 per team",
         prizes: "Certificates",
@@ -251,12 +256,13 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSd9GUdujWUicqsaaagxi9cwi2BYhzElRUYah-H3YHwq_h6Hzw/viewform?usp=header",
         description: "A thrilling game based on the popular series.",
+        date: "8th March",
         entryFee: "₹100",
         mode: "Offline",
         type: "Single",
         participants: "1",
-        venue: "Main Ground",
-        time: "Today at 3 PM",
+        venue: "Canteen Area",
+        time: "-",
         prizes: "Trophies and Certificates",
         prizeMoney: { first: "₹1000" },
         minimumParticipation: "1",
@@ -273,7 +279,8 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSdLQAoLSwJIl9XhfHaCt2ZYD5YPb-Z6KXK39BNWgUJE35Inpw/viewform?usp=header",
         time: "15 minutes",
-        venue: "Main Ground",
+        date: "7th March",
+        venue: "Parking Area",
         // participants: "Teams of 4",
         entryFee: "₹50 per participant",
         prizes: "Certificates for winners",
@@ -302,7 +309,8 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSf5MCwMTZ20t-hD3y82AZ46-06Bj2APqILmdG-D_YUhlwNrVA/viewform?usp=header",
         time: "45 minutes",
-        venue: "College Ground",
+        date: "7th March",
+        venue: "Amphitheatre",
         participants: "Group",
         entryFee: "₹250",
         prizes: "Trophy/Certificates",
@@ -328,8 +336,9 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLScuxZ_GpzM0mJ2PiNc50jFDmOYyLA6KXhtGTpyNSSkcrYDF4A/viewform?usp=header",
         time: "30 minutes",
-        venue: "Main Ground",
-        participants: "Single",
+        date: "8th March",
+        venue: "Classroom",
+        participants: "1",
         entryFee: "₹50 per participant",
         prizes: "Certificates for the most creative paintings",
         description:
@@ -361,7 +370,8 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSduVsWcqyVmGEWgxZjr_5jO_989sKW6V5fgZfia38CV-PvoWg/viewform?usp=header",
         time: "3-5 minutes per performance",
-        venue: "Auditorium",
+        date: "8th March",
+        venue: "Stage",
         participants: "Single ",
         entryFee: "₹200 per participant",
         prizes: "Trophy and Certificates for top performers",
@@ -393,7 +403,8 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSdg40qAK2I0-z0AgWEMi0UVcsm9G6H-I0nojKMCcB_IdLChzw/viewform?usp=header",
         time: "6 minutes per act",
-        venue: "Auditorium",
+        date: "7th March",
+        venue: "Stage",
         participants: "Group",
         entryFee: "₹500",
         prizes: "Certificates for top 3 performers",
@@ -427,15 +438,16 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLScXYQE9YmjpXM92rA5BGXQeITBConfJ_qOf6Z-ldhxTsFd__w/viewform?usp=header",
         time: "30-45 minutes",
-        venue: "College Ground",
+        date: "8th March",
+        venue: "Stage",
         participants: "Single/Group",
-        entryFee: "200/500",
+        entryFee: "Solo-200/Group-500",
         prizes: "Certificates for top 3 photos",
         description:
           "Participants click photographs on campus and explain the story behind their best picture.",
         mode: "Offline",
         type: "Solo/Group",
-        prizeMoney: { first: "1000/2500" },
+        prizeMoney: { first: "Solo-1000/Group-2500" },
         minimumParticipation: "Not specified",
         rules: {
           game: [
@@ -450,7 +462,8 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLScDsr5viMHLeUfNOXSwZYGbisOCX9YpSWNo3IOejBteoqZVYw/viewform?usp=header",
         time: "30-45 minutes",
-        venue: "Main Ground",
+        date: "8th March",
+        venue: "Stage",
         participants: "Teams of 3-4",
         entryFee: "₹100 per participant",
         prizes: "Certificates for winners",
@@ -484,7 +497,8 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSednLA14INPWlhKybvl3GoOSH_V5TTGnTRnk_3igLyf1xVyAg/viewform?usp=header",
         time: "10 minutes per performance",
-        venue: "Auditorium",
+        date: "7th March",
+        venue: "Stage",
         participants: "Single",
         entryFee: "₹500",
         prizes: "Trophy and Certificates for top DJs",
@@ -522,11 +536,46 @@ export const eventData = [
     backgroundImage: "https://picsum.photos/240/320?random=4",
     details: [
       {
+        name: "Box Cricket (6v6)",
+        registrationLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSefI611jXIXEPDx-nMAKtX7CFRjJVb_EXHut5yUF6pkm87WAw/viewform?usp=header",
+        time: "20 minutes per match",
+        date: "6th & 7th March",
+        venue: "Canteen Area",
+        participants: "Teams of 6 players",
+        entryFee: "₹800 per team",
+        prizes:
+          "Trophies, Certificates, Medals for Best Batsman and Best Bowler",
+        description:
+          "A condensed cricket version played in a small court with knockout matches.",
+        mode: "Offline",
+        type: "Group",
+        prizeMoney: { first: "₹5000", second: "₹2500" },
+        minimumParticipation: "12 teams",
+        rules: {
+          game: [
+            "The umpire's decision will be final.",
+            "Each match will consist of 3 overs, and each bowler can bowl only 1 over.",
+            "Each team will have 8 players and 1 reserve.",
+            "Teams must be present at the ground half an hour before the scheduled time. Failure to do so will result in disqualification.",
+            "Bowlers must bowl from within the bowling crease.",
+            "The chasing team must score runs (compulsory chase).",
+            "Sidearm deliveries will be declared as no-balls.",
+            "The bowler must bowl from behind the designated line; otherwise, it will be declared a no-ball.",
+            "No LBW (Leg Before Wicket).",
+            "Runs will be awarded for byes, leg byes, and overthrows.",
+            "The batsman must keep at least one foot inside the batting crease.",
+            "The organizing committee reserves the right to make changes to the tournament or rules.",
+          ],
+        },
+      },
+      {
         name: "Futsal (3v3)",
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSe2hD4au0UTDTWZ1Sxp12QpcIaDVqSVdfN_kno-vpiPi2QAxg/viewform?usp=header",
         time: "10 min game(5 min half with 1 break at half time)",
-        venue: "Sports Complex",
+        date: "7th March",
+        venue: "Quadrangle",
         participants: "Teams of 3+1 (Rolling sub)",
         entryFee: "₹500 per team",
         prizes: "Trophies and Special awards",
@@ -558,44 +607,12 @@ export const eventData = [
         },
       },
       {
-        name: "Box Cricket (6v6)",
-        registrationLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSefI611jXIXEPDx-nMAKtX7CFRjJVb_EXHut5yUF6pkm87WAw/viewform?usp=header",
-        time: "20 minutes per match",
-        venue: "Sports Complex",
-        participants: "Teams of 6 players",
-        entryFee: "₹800 per team",
-        prizes:
-          "Trophies, Certificates, Medals for Best Batsman and Best Bowler",
-        description:
-          "A condensed cricket version played in a small court with knockout matches.",
-        mode: "Offline",
-        type: "Group",
-        prizeMoney: { first: "₹5000", second: "₹2500" },
-        minimumParticipation: "12 teams",
-        rules: {
-          game: [
-            "The umpire's decision will be final.",
-            "Each match will consist of 3 overs, and each bowler can bowl only 1 over.",
-            "Each team will have 8 players and 1 reserve.",
-            "Teams must be present at the ground half an hour before the scheduled time. Failure to do so will result in disqualification.",
-            "Bowlers must bowl from within the bowling crease.",
-            "The chasing team must score runs (compulsory chase).",
-            "Sidearm deliveries will be declared as no-balls.",
-            "The bowler must bowl from behind the designated line; otherwise, it will be declared a no-ball.",
-            "No LBW (Leg Before Wicket).",
-            "Runs will be awarded for byes, leg byes, and overthrows.",
-            "The batsman must keep at least one foot inside the batting crease.",
-            "The organizing committee reserves the right to make changes to the tournament or rules.",
-          ],
-        },
-      },
-      {
         name: "Chess",
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSc5hn4U_nk5hHUPnb8Bct-58ZOpzbz17muZ_tPXwf-9cCMstQ/viewform?usp=header",
         time: "15 points per set, best of 3 sets",
-        venue: "Sports Complex",
+        date: "7th March",
+        venue: "Sports Room",
         participants: "solo",
         entryFee: "₹150 ",
         prizes: "Trophies, Certificates, Special recognition for Best Player",
@@ -613,7 +630,8 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSc42mhbKDC7VS69_hkuWvZ6SrndZllUdF7RFYOXgHlKt5Qg5w/viewform?usp=header",
         time: "20-minute halves (40 minutes total)",
-        venue: "Sports Complex",
+        date: "8th March",
+        venue: "Quadrangle",
         participants: "Single",
         entryFee: "₹100",
         prizes:
@@ -654,7 +672,8 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSdaoKZ_DRl8bIaqlDzdh6xuT0n5KF0KASixqLIjBbEhqVM6_g/viewform?usp=header",
         time: "5-over matches (approximately 45 minutes)",
-        venue: "Sports Complex",
+        venue: "Sports Room",
+        date: "8th March",
         participants: "Solo",
         entryFee: "₹100 per team",
         prizes:
@@ -679,7 +698,8 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLScmUBbUv32e1QXXZd34FaNowIN4daFx4x074bobk-Go2EH9ZQ/viewform?usp=header",
         time: "5-over matches (approximately 45 minutes)",
-        venue: "Sports Complex",
+        date: "8th March",
+        venue: "Sports Room",
         participants: "Single",
         entryFee: "₹100 per team",
         prizes:
@@ -721,6 +741,7 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLScrvGMhcciCHE2gXaOXhyXV3Cs4z04UAZD8yQksys1G1i26Mg/viewform?usp=header",
         time: "30 minutes per match",
+        date: "7th March",
         venue: "E-Sports Arena",
         participants: "Teams of 5 players",
         entryFee: "₹750 per team",
@@ -751,6 +772,7 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSc088uC5nCZk9ao4jNsTV0QsQhbyjvmnkNeyipOo83decP4gg/viewform?usp=header",
         time: "30-40 minutes per match",
+        date: "7th March",
         venue: "E-Sports Arena",
         participants: "Teams of 4 players",
         entryFee: "₹500 per team",
@@ -771,14 +793,14 @@ export const eventData = [
             "Ensure their device is fully charged.",
             "Point system: 1 point per kill.",
           ],
-          cod: [
-            "5v5 format.",
-            "Standard S&D rules.",
-            "No hacks.",
-            "Map rotation: Summit, Raid, Firing Range, etc.",
-            "BO3 or BO5 format (depending on time).",
-            "Players must submit their game IDs before the match.",
-          ],
+          // cod: [
+          //   "5v5 format.",
+          //   "Standard S&D rules.",
+          //   "No hacks.",
+          //   "Map rotation: Summit, Raid, Firing Range, etc.",
+          //   "BO3 or BO5 format (depending on time).",
+          //   "Players must submit their game IDs before the match.",
+          // ],
         },
       },
       {
@@ -786,6 +808,7 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSeDVq_m1osG2isDuLU2oQoEBawDSfmYs3_J5hIBemND9_hFQA/viewform?usp=header",
         time: "10-15 minutes per match",
+        date: "7th March",
         venue: "E-Sports Arena",
         participants: "Solo",
         entryFee: "₹150 ",
@@ -812,6 +835,7 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSevUe6yWtMrF4qfGjHMfVaV8mK98-RI-DMy_OQ7-ZvXFZ3tyw/viewform?usp=header",
         time: "5-10 minutes per match",
+        date: "8th March",
         venue: "E-Sports Arena",
         participants: "Single",
         entryFee: "₹150 per participant",
@@ -838,6 +862,7 @@ export const eventData = [
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSf7E5hPXHr2ZEDuCyJbCjBpi9MdgZKQrTasnMSfmDO_mwIgOw/viewform?usp=header",
         time: "10-15 minutes per match",
+        date: "8th March",
         venue: "E-Sports Arena",
         participants: "Single",
         entryFee: "₹100 per participant",
