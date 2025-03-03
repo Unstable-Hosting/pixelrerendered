@@ -11,14 +11,14 @@ export const eventData = [
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfdi1Ggt2zqrPpoWUafhoerULBwauuvfctDeq7DO0k2YZEEpg/viewform?usp=header",
         time: "45 minutes",
         venue: "Computer Lab",
-        participants: "Teams of 4-6",
-        entryFee: "₹100 per team",
+        participants: "Teams of 3",
+        entryFee: "₹150 per team",
         prizes: "Trophy and Certificates",
         description:
           'A tech-themed treasure hunt inside a lab where participants solve puzzles and challenges to "escape."',
         mode: "Offline",
-        type: "Group (of 4-6)",
-        prizeMoney: { first: "₹800", second: "₹400" },
+        type: "Group (3)",
+        prizeMoney: { first: "₹1000", second: "₹500" },
         minimumParticipation: "12 teams",
         rules: {
           general: [
@@ -56,13 +56,13 @@ export const eventData = [
         time: "15 minutes",
         venue: "Lab 1",
         participants: "Single",
-        entryFee: "₹30",
+        entryFee: "₹50",
         prizes: "Certificate/Medals",
         description:
           "A game that tests the ability to generate precise, effective responses to given prompts.",
         mode: "Offline",
         type: "Individual",
-        prizeMoney: { first: "₹400", second: "₹200" },
+        prizeMoney: { first: "₹500", second: "₹250" },
         minimumParticipation: "20 participants",
         rules: {
           general: [
@@ -100,13 +100,13 @@ export const eventData = [
         time: "15 minutes",
         venue: "Lab 2",
         participants: "Single",
-        entryFee: "₹40",
+        entryFee: "₹50",
         prizes: "Certificates",
         description:
           "Participants are provided with an HTML page and must creatively apply CSS to enhance its visual appeal. Bootstrap frameworks are not allowed.",
         mode: "Offline",
         type: "Individual",
-        prizeMoney: { first: "₹400", second: "₹200" },
+        prizeMoney: { first: "₹500", second: "₹250" },
         minimumParticipation: "20 participants",
         rules: {
           general: [
@@ -143,14 +143,14 @@ export const eventData = [
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSckAvqENnDHlylJ3JGTJFAzq-a_pp54DEC8jUzOThDXVzNFvg/viewform?usp=header",
         time: "20 minutes",
         venue: "Lab",
-        participants: "Teams of 3",
-        entryFee: "₹30 per team",
+        participants: "Teams of 2-3",
+        entryFee: "₹150 per team",
         prizes: "Certificates",
         description:
           "Teams debug code in a relay format, passing progress to the next member.",
         mode: "Offline",
-        type: "Team (3 members)",
-        prizeMoney: { first: "₹200", second: "₹100" },
+        type: "Team (2-3 members)",
+        prizeMoney: { first: "₹1000", second: "₹500" },
         minimumParticipation: "10 teams",
         rules: {
           general: [
@@ -245,15 +245,15 @@ export const eventData = [
         name: "Squid Game",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSd9GUdujWUicqsaaagxi9cwi2BYhzElRUYah-H3YHwq_h6Hzw/viewform?usp=header",
         description: "A thrilling game based on the popular series.",
-        entryFee: "₹500",
+        entryFee: "₹100",
         mode: "Offline",
-        type: "Group",
-        participants: "Teams of 5",
+        type: "Single",
+        participants: "1",
         venue: "Main Ground",
         time: "Today at 3 PM",
         prizes: "Trophies and Certificates",
-        prizeMoney: { first: "₹2000", second: "₹1000" },
-        minimumParticipation: "5 teams",
+        prizeMoney: { first: "₹1000" },
+        minimumParticipation: "1",
         rules: {
           game: [
             "Rule 1",
@@ -267,14 +267,14 @@ export const eventData = [
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdLQAoLSwJIl9XhfHaCt2ZYD5YPb-Z6KXK39BNWgUJE35Inpw/viewform?usp=header",
         time: "15 minutes",
         venue: "Main Ground",
-        participants: "Teams of 4",
+        // participants: "Teams of 4",
         entryFee: "₹50 per participant",
         prizes: "Certificates for winners",
         description:
           "A life-sized version of Ludo where participants act as tokens.",
         mode: "Offline",
-        type: "Group (of 4)",
-        prizeMoney: { first: "Certificates" },
+        type: "Single",
+        prizeMoney: { first: "₹500", second: "₹250"  },
         minimumParticipation: "Not specified",
         rules: {
           game: [
@@ -295,14 +295,14 @@ export const eventData = [
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSf5MCwMTZ20t-hD3y82AZ46-06Bj2APqILmdG-D_YUhlwNrVA/viewform?usp=header",
         time: "45 minutes",
         venue: "College Ground",
-        participants: "Solo",
-        entryFee: "₹50",
+        participants: "Group",
+        entryFee: "₹250",
         prizes: "Trophy/Certificates",
         description:
           "A hunt-based event where participants solve clues and find hidden items across the campus.",
         mode: "Offline",
-        type: "Individual",
-        prizeMoney: { first: "Trophy/Certificates" },
+        type: "5 Members",
+        prizeMoney: { first: "₹1000", second: "₹500" },
         minimumParticipation: "Not specified",
         rules: {
           game: [
@@ -321,13 +321,13 @@ export const eventData = [
         time: "30 minutes",
         venue: "Main Ground",
         participants: "Single",
-        entryFee: "₹30 per participant",
+        entryFee: "₹50 per participant",
         prizes: "Certificates for the most creative paintings",
         description:
           "Participants use unconventional tools like feathers, earbuds, vegetables, or threads to create unique artwork. Paint Brushes are not allowed.",
         mode: "Offline",
         type: "Individual",
-        prizeMoney: { first: "Certificates" },
+        prizeMoney: { first: "₹500", second: "₹250"  },
         minimumParticipation: "Not specified",
         rules: {
           game: [
@@ -352,13 +352,13 @@ export const eventData = [
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSduVsWcqyVmGEWgxZjr_5jO_989sKW6V5fgZfia38CV-PvoWg/viewform?usp=header",
         time: "3-5 minutes per performance",
         venue: "Auditorium",
-        participants: "Single or Teams (3-6 for groups)",
-        entryFee: "₹50 per participant",
+        participants: "Single ",
+        entryFee: "₹200 per participant",
         prizes: "Trophy and Certificates for top performers",
         description: "A high-energy competition featuring various performing arts.",
         mode: "Online/Offline",
-        type: "Solo or Group (3-6)",
-        prizeMoney: { first: "₹500 per category" },
+        type: "Solo ",
+        prizeMoney: { first: "₹1000 per category" },
         minimumParticipation: "20 participants",
         rules: {
           general: [
@@ -382,7 +382,7 @@ export const eventData = [
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdg40qAK2I0-z0AgWEMi0UVcsm9G6H-I0nojKMCcB_IdLChzw/viewform?usp=header",
         time: "6 minutes per act",
         venue: "Auditorium",
-        participants: "Team of 3",
+        participants: "Group",
         entryFee: "₹500",
         prizes: "Certificates for top 3 performers",
         description:
@@ -415,14 +415,14 @@ export const eventData = [
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScXYQE9YmjpXM92rA5BGXQeITBConfJ_qOf6Z-ldhxTsFd__w/viewform?usp=header",
         time: "30-45 minutes",
         venue: "College Ground",
-        participants: "Single",
-        entryFee: "₹50",
+        participants: "Single/Group",
+        entryFee: "200/500",
         prizes: "Certificates for top 3 photos",
         description:
           "Participants click photographs on campus and explain the story behind their best picture.",
         mode: "Offline",
-        type: "Solo",
-        prizeMoney: { first: "Certificates" },
+        type: "Solo/Group",
+        prizeMoney: { first: "1000/2500" },
         minimumParticipation: "Not specified",
         rules: {
           game: [
@@ -438,13 +438,13 @@ export const eventData = [
         time: "30-45 minutes",
         venue: "Main Ground",
         participants: "Teams of 3-4",
-        entryFee: "₹50 per participant",
+        entryFee: "₹100 per participant",
         prizes: "Certificates for winners",
         description:
           "Inspired by game shows, participants complete challenges like singing lyrics or trivia to avoid elimination.",
         mode: "Offline",
         type: "Group",
-        prizeMoney: { first: "₹2500" },
+        prizeMoney: { first: "₹3000",second:"1500" },
         minimumParticipation: "5 participants",
         rules: {
           general: [
@@ -471,13 +471,13 @@ export const eventData = [
         time: "10 minutes per performance",
         venue: "Auditorium",
         participants: "Single",
-        entryFee: "₹50",
+        entryFee: "₹500",
         prizes: "Trophy and Certificates for top DJs",
         description:
           "DJs showcase mixing skills and engage the audience with creative transitions and live mixes.",
-        mode: "Online/Offline",
+        mode: "Offline",
         type: "Solo",
-        prizeMoney: { first: "₹500" },
+        prizeMoney: { first: "₹2500" },
         minimumParticipation: "5 participants",
         rules: {
           general: [
@@ -489,7 +489,7 @@ export const eventData = [
             "Live performance only – No pre-recorded mixes allowed.",
             "Judging criteria: Creativity, mixing skills, track selection, crowd engagement, and technical ability.",
             "Judges' decision is final – No disputes will be entertained.",
-            "Handle equipment with care – Any damage is the participant’s responsibility.",
+            "Handle equipment with care – Any damage is the participant's responsibility.",
             "Arrive 1 hour before the event – Latecomers may be disqualified."
           ],
           game: [
@@ -511,8 +511,8 @@ export const eventData = [
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSe2hD4au0UTDTWZ1Sxp12QpcIaDVqSVdfN_kno-vpiPi2QAxg/viewform?usp=header",
         time: "14 minutes total",
         venue: "Sports Complex",
-        participants: "Teams of 5 players",
-        entryFee: "₹700 per team",
+        participants: "Teams of 3 players",
+        entryFee: "₹500 per team",
         prizes: "Trophies and Special awards",
         description:
           "A fast-paced, small-sided football game with knockout matches.",
@@ -537,7 +537,7 @@ export const eventData = [
             "Red card: Player sent off, and the team plays with 2 players.",
             "Teams must report 10 minutes before their match.",
             "Misconduct by players or teams (fighting, abusive language, etc.) will lead to disqualification.",
-            "Referee’s decision is final."
+            "Referee's decision is final."
           ]
         }
       },
@@ -547,7 +547,7 @@ export const eventData = [
         time: "20 minutes per match",
         venue: "Sports Complex",
         participants: "Teams of 6 players",
-        entryFee: "₹700 per team",
+        entryFee: "₹800 per team",
         prizes:
           "Trophies, Certificates, Medals for Best Batsman and Best Bowler",
         description:
@@ -578,18 +578,18 @@ export const eventData = [
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSc5hn4U_nk5hHUPnb8Bct-58ZOpzbz17muZ_tPXwf-9cCMstQ/viewform?usp=header",
         time: "15 points per set, best of 3 sets",
         venue: "Sports Complex",
-        participants: "Teams of 5 players",
-        entryFee: "₹700 per team",
+        participants: "solo",
+        entryFee: "₹150 ",
         prizes: "Trophies, Certificates, Special recognition for Best Player",
         description:
-          "Volleyball matches with elimination-based tournament format.", // Note: Description seems incorrect; should be chess-related
+          "Showcase your Chess Skills", // Note: Description seems incorrect; should be chess-related
         mode: "Offline",
         type: "Solo",
         prizeMoney: { first: "₹1000", second: "₹500" },
         minimumParticipation: "7 participants",
         rules: {
           game: [
-            "Follows FIDE rules."
+            "Follows Chess rules."
           ]
         }
       },
@@ -598,25 +598,38 @@ export const eventData = [
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSc42mhbKDC7VS69_hkuWvZ6SrndZllUdF7RFYOXgHlKt5Qg5w/viewform?usp=header",
         time: "20-minute halves (40 minutes total)",
         venue: "Sports Complex",
-        participants: "Teams of 11 players",
-        entryFee: "₹900 per team",
+        participants: "Single",
+        entryFee: "₹100",
         prizes:
           "Trophies, Certificates, Awards for Best Goalkeeper and Top Scorer",
         description:
-          "Full-field football matches with knockout-based tournament.", // Note: Description seems incorrect; should be badminton-related
+          "Full-field Badminton matches with knockout-based tournament.", // Note: Description seems incorrect; should be badminton-related
         mode: "Offline",
         type: "Solo",
-        prizeMoney: { first: "₹1000", second: "₹500" },
+        prizeMoney: { first: "₹500", second: "₹250" },
         minimumParticipation: "10 participants",
         rules: {
+          general: [
+            "All participants must report 15 minutes before their scheduled match time.",
+            "Players must bring their own rackets. Shuttlecocks will be provided by the organizers.",
+            "Proper sports attire and non-marking shoes are mandatory.",
+            "The referee's decision will be final and binding in all matters.",
+            "Any misconduct or unsportsmanlike behavior will result in immediate disqualification."
+          ],
           game: [
-            "The league stage will have 1 set format for each category.",
-            "If a team wins the first two out of three sets, no further matches will be played, with each set played to 15 points.",
+            "The league stage will have 1 set format for each category, played to 15 points.",
+            "If a player/team wins the first two out of three sets, no further matches will be played.",
             "Service and side selection will be decided by a toss.",
-            "Semi-finals and finals will follow a best-of-three sets format, with each set played to 11 points.",
-            "All standard badminton rules apply.",
+            "Semi-finals and finals will follow a best-of-three sets format, with each set played to 21 points.",
+            "All standard Badminton World Federation (BWF) rules apply.",
             "Players will be allowed a 1-minute break between ongoing matches.",
-            "A 2-minute interval is allowed between each game, no additional timeouts will be granted."
+            "A 2-minute interval is allowed between each game, no additional timeouts will be granted.",
+            "In case of a tie at 20-20, the set continues until one player/team gains a 2-point lead or reaches 30 points."
+          ],
+          winningCriteria: [
+            "The tournament will follow a knockout format.",
+            "Winners advance to the next round until the finals.",
+            "In case of any dispute, the organizing committee's decision will be final."
           ]
         }
       },
@@ -625,12 +638,12 @@ export const eventData = [
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdaoKZ_DRl8bIaqlDzdh6xuT0n5KF0KASixqLIjBbEhqVM6_g/viewform?usp=header",
         time: "5-over matches (approximately 45 minutes)",
         venue: "Sports Complex",
-        participants: "Teams of 11 players",
-        entryFee: "₹900 per team",
+        participants: "Solo",
+        entryFee: "₹100 per team",
         prizes:
           "Trophies, Certificates, Awards for Best Batsman and Best Bowler",
         description:
-          "Condensed cricket format with aggressive play and knockout matches.", // Note: Description seems incorrect; should be carrom-related
+          "Showcase you carro Skills", // Note: Description seems incorrect; should be carrom-related
         mode: "Offline",
         type: "Solo",
         prizeMoney: { first: "₹500" },
@@ -674,7 +687,7 @@ export const eventData = [
             "If the ball touches the net on a serve but lands correctly, it is a let serve and must be replayed.",
             "Players must report at least 10 minutes before their scheduled match.",
             "Misconduct, including arguing with the referee or unsportsmanlike behavior, will lead to disqualification.",
-            "Referee’s decision is final."
+            "Referee's decision is final."
           ]
         }
       }
@@ -692,13 +705,13 @@ export const eventData = [
         time: "30 minutes per match",
         venue: "E-Sports Arena",
         participants: "Teams of 5 players",
-        entryFee: "₹500 per team",
+        entryFee: "₹750 per team",
         prizes: "Trophies and Certificates",
         description:
           "Tactical shooter with swift-play mode and knockout format.",
         mode: "Offline",
         type: "Group",
-        prizeMoney: { first: "₹5000" },
+        prizeMoney: { first: "₹3500" },
         minimumParticipation: "10 teams",
         rules: {
           game: [
@@ -728,7 +741,7 @@ export const eventData = [
           "Competitive shooting games with Battle Royale or objective-based matches.",
         mode: "Offline",
         type: "Group",
-        prizeMoney: { first: "₹3000", second: "₹2000" },
+        prizeMoney: { first: "₹2000", second: "₹1000" },
         minimumParticipation: "10 teams",
         rules: {
           bgmi: [
@@ -736,7 +749,7 @@ export const eventData = [
             "Final match will consist of 3 matches (Erangel, Sanhok, Miramar).",
             "Players are restricted to using phones only; the use of tablets is not permitted.",
             "If a player is found using mods or aim bots, the team will be disqualified from the event.",
-            "All players must download the required maps; if they get kicked out at the start of the event, it’s their responsibility.",
+            "All players must download the required maps; if they get kicked out at the start of the event, it's their responsibility.",
             "Ensure their device is fully charged.",
             "Point system: 1 point per kill."
           ],
@@ -755,13 +768,13 @@ export const eventData = [
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeDVq_m1osG2isDuLU2oQoEBawDSfmYs3_J5hIBemND9_hFQA/viewform?usp=header",
         time: "10-15 minutes per match",
         venue: "E-Sports Arena",
-        participants: "Teams of 2 players",
-        entryFee: "₹200 per team",
+        participants: "Solo",
+        entryFee: "₹150 per team",
         prizes: "Certificates for top teams",
         description: "Football simulation with knockout-based tournament.",
         mode: "Offline",
-        type: "Group",
-        prizeMoney: { first: "Certificates" },
+        type: "solo",
+        prizeMoney: { first: "1000" },
         minimumParticipation: "Not specified",
         rules: {
           game: [
@@ -781,12 +794,12 @@ export const eventData = [
         time: "5-10 minutes per match",
         venue: "E-Sports Arena",
         participants: "Single",
-        entryFee: "₹100 per participant",
+        entryFee: "₹150 per participant",
         prizes: "Certificates for top 3 players",
         description: "Fighting game with 1v1 matches and knockout format.",
         mode: "Offline",
         type: "Solo",
-        prizeMoney: { first: "Certificates" },
+        prizeMoney: { first: "1000" },
         minimumParticipation: "Not specified",
         rules: {
           game: [
@@ -812,7 +825,7 @@ export const eventData = [
           "Multiplayer obstacle course game with quick reflexes and timing.",
         mode: "Offline",
         type: "Solo",
-        prizeMoney: { first: "Certificates" },
+        prizeMoney: { first: "500" },
         minimumParticipation: "Not specified",
         rules: {
           game: [
