@@ -14,13 +14,13 @@ export const eventData = [
         date: "8th March",
         venue: "Computer Centre",
         participants: "Teams of 3",
-        entryFee: "₹150 per team",
+        entryFee: "₹90 per team",
         prizes: "Trophy and Certificates",
         description:
           'A tech-themed treasure hunt inside a lab where participants solve puzzles and challenges to "escape."',
         mode: "Offline",
         type: "Group (3)",
-        prizeMoney: { first: "₹1000", second: "₹500" },
+        prizeMoney: { first: "exciting prize to be announced"},
         minimumParticipation: "12 teams",
         rules: {
           general: [
@@ -112,7 +112,7 @@ export const eventData = [
           "Participants are provided with an HTML page and must creatively apply CSS to enhance its visual appeal. Bootstrap frameworks are not allowed.",
         mode: "Offline",
         type: "Individual",
-        prizeMoney: { first: "₹500", second: "₹250" },
+        prizeMoney: { first: "exciting prize to be announced", },
         minimumParticipation: "20 participants",
         rules: {
           general: [
@@ -152,13 +152,13 @@ export const eventData = [
         date: "7th March",
         venue: "Lab 1",
         participants: "Teams of 2-3",
-        entryFee: "₹150 per team",
+        entryFee: "₹90 per team",
         prizes: "Certificates",
         description:
           "Teams debug code in a relay format, passing progress to the next member.",
         mode: "Offline",
         type: "Team (2-3 members)",
-        prizeMoney: { first: "₹1000", second: "₹500" },
+        prizeMoney: { first: "exciting prize to be announced" },
         minimumParticipation: "10 teams",
         rules: {
           general: [
@@ -207,7 +207,7 @@ export const eventData = [
           "Teams debug code in a relay format, passing progress to the next member.",
         mode: "Offline",
         type: "Team (3 members)",
-        prizeMoney: { first: "₹500", second: "₹250" },
+        prizeMoney: { first: "exciting prize to be announced" },
         minimumParticipation: "15 participants",
         rules: {
           general: [
@@ -593,17 +593,17 @@ export const eventData = [
         name: "Futsal (3v3)",
         registrationLink:
           "https://docs.google.com/forms/d/e/1FAIpQLSe2hD4au0UTDTWZ1Sxp12QpcIaDVqSVdfN_kno-vpiPi2QAxg/viewform?usp=header",
-        time: "10 min game(5 min half with 1 break at half time)",
+        time: "10 min game",
         date: "7th March",
         venue: "Quadrangle",
         participants: "Teams of 3+1 (Rolling sub)",
-        entryFee: "₹500 per team",
+        entryFee: "₹400 per team",
         prizes: "Trophies and Special awards",
         description:
           "A fast-paced, small-sided football game with knockout matches.",
         mode: "Offline",
         type: "Group",
-        prizeMoney: { first: "₹3500", second: "₹1500" },
+        prizeMoney: { first: "₹2500", second: "₹1000" },
         minimumParticipation: "10 teams",
         rules: {
           game: [
@@ -634,12 +634,12 @@ export const eventData = [
         date: "7th March",
         venue: "Sports Room",
         participants: "solo",
-        entryFee: "₹150 ",
+        entryFee: "₹100 ",
         prizes: "Trophies, Certificates, Special recognition for Best Player",
         description: "Showcase your Chess Skills", // Note: Description seems incorrect; should be chess-related
         mode: "Offline",
         type: "Solo",
-        prizeMoney: { first: "₹1000", second: "₹500" },
+        prizeMoney: { first: "exciting prize to be announced", },
         minimumParticipation: "7 participants",
         rules: {
           game: ["Follows Chess rules."],
@@ -660,7 +660,7 @@ export const eventData = [
           "Full-field Badminton matches with knockout-based tournament.", // Note: Description seems incorrect; should be badminton-related
         mode: "Offline",
         type: "Solo",
-        prizeMoney: { first: "₹500", second: "₹250" },
+        prizeMoney: { first: "exciting prize to be announced" },
         minimumParticipation: "10 participants",
         rules: {
           general: [
@@ -728,7 +728,7 @@ export const eventData = [
           "Show off your speed and precision in our thrilling table tennis tournament! Players will compete in a 1v1 format, following standard rules. Outsmart your opponent with skillful shots and quick reflexes to advance to the next round! 🏓🔥",
         mode: "Offline",
         type: "Solo",
-        prizeMoney: { first: "₹500" },
+        prizeMoney: { first: "exciting prize to be announced" },
         minimumParticipation: "5 participants",
         rules: {
           game: [
@@ -764,13 +764,13 @@ export const eventData = [
         date: "7th March",
         venue: "E-Sports Arena",
         participants: "Teams of 5 players",
-        entryFee: "₹750 per team",
+        entryFee: "₹500 per team",
         prizes: "Trophies and Certificates",
         description:
           "Tactical shooter with an Unrated custom match and a knockout format.",
         mode: "Offline",
         type: "Group",
-        prizeMoney: { first: "₹3500" },
+        prizeMoney: { first: "₹2000" },
         minimumParticipation: "10 teams",
         rules: {
           game: [
@@ -795,13 +795,13 @@ export const eventData = [
         date: "7th March",
         venue: "E-Sports Arena",
         participants: "Teams of 4 players",
-        entryFee: "₹500 per team",
+        entryFee: "₹200 per team",
         prizes: "Trophies and Certificates for top teams",
         description:
           "Competitive shooting games with Battle Royale or objective-based matches.",
         mode: "Offline",
         type: "Group",
-        prizeMoney: { first: "₹2000", second: "₹1000" },
+        prizeMoney: { first: "₹1500", second: "₹700" },
         minimumParticipation: "10 teams",
         rules: {
           bgmi: [
@@ -831,7 +831,7 @@ export const eventData = [
         date: "7th March",
         venue: "E-Sports Arena",
         participants: "Solo",
-        entryFee: "₹150 ",
+        entryFee: "₹100 ",
         prizes: "Certificates for top teams",
         description: "Football simulation with knockout-based tournament.",
         mode: "Offline",
@@ -858,7 +858,7 @@ export const eventData = [
         date: "8th March",
         venue: "E-Sports Arena",
         participants: "Single",
-        entryFee: "₹150 per participant",
+        entryFee: "₹100 per participant",
         prizes: "Certificates for top 3 players",
         description: "Fighting game with 1v1 matches and knockout format.",
         mode: "Offline",
