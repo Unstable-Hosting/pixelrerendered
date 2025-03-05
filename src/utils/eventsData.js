@@ -801,7 +801,7 @@ export const eventData = [
           "Competitive shooting games with Battle Royale or objective-based matches.",
         mode: "Offline",
         type: "Group",
-        prizeMoney: { first: "₹1500", second: "₹700" },
+        prizeMoney: { first: "₹9000", second: "₹5000", third:"₹3000", fourth:"₹2000", fifth:"₹1000" },
         minimumParticipation: "10 teams",
         rules: {
           bgmi: [
