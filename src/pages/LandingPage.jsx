@@ -43,7 +43,7 @@ const LandingPage = () => {
           <Timer />
           <div className="button-container">
             <button className="btn">
-              <a href="#">Meet the Team</a>
+              <a href="team">Meet the Team</a>
             </button>
           </div>
         </div>
