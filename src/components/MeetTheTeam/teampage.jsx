@@ -1,6 +1,36 @@
 import TeamMembers from "./team-members";
 
+import { useEffect } from "react"
+
 export default function TeamPage() {
+  useEffect(() => {
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in")
+          }
+        })
+      },
+      {
+        threshold: 0.1, 
+        rootMargin: "0px 0px -100px 0px", 
+      },
+    )
+
+    
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+      observer.observe(el)
+    })
+
+    return () => {
+      // Clean up
+      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+        observer.unobserve(el)
+      })
+    }
+  }, [])
   return (
     <main className="min-h-screen bg-black text-white">
       <div className="fixed inset-0 grid-bg opacity-20 z-0 pointer-events-none"></div>

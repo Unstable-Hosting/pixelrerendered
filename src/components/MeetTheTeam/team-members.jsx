@@ -1,392 +1,257 @@
 import { useState, useRef, useEffect } from "react"
 
-// Sample team data organized by committees - replace with your actual team members
 const teamData = {
   "Core Commitee Members": [
     {
       id: 1,
       name: "Poorva",
       role: "Event Head",
-      photoUrl: "/poorva.jpeg",
-      videoUrl: "/videofile.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-        github: "https://github.com",
-      },
+      photoUrl: "/poorva.jpeg"
     },
     {
       id: 2,
-      name: "Velvighnesh ",
+      name: "Velvighnesh",
       role: "Event Co-Head",
-      photoUrl: "/velvi.jpg",
-      videoUrl: "/videos/team-member-2.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
+      photoUrl: "/velvi.jpg"
     },
     {
       id: 3,
       name: "Janani",
       role: "Core member",
-      photoUrl: "/janani.jpg",
-      videoUrl: "/videos/team-member-3.mp4",
-      socialLinks: {
-        linkedin: "https://linkedin.com",
-        github: "https://github.com",
-      },
+      photoUrl: "/janani.jpg"
     },
     {
-      id: 3,
+      id: 4,
       name: "Ankur",
-      role: "Event Head ( Student Council Head ) ",
-      photoUrl: "/ankur.jpg",
-      videoUrl: "/videos/team-member-3.mp4",
-      socialLinks: {
-        linkedin: "https://linkedin.com",
-        github: "https://github.com",
-      },
+      role: "Event Head (Student Council Head)",
+      photoUrl: "/ankur.jpg"
     },
     {
-      id: 3,
+      id: 5,
       name: "Rushikesh",
       role: "Commitee Member",
-      photoUrl: "/rushikesh.jpeg",
-      videoUrl: "/videos/team-member-3.mp4",
-      socialLinks: {
-        linkedin: "https://linkedin.com",
-        github: "https://github.com",
-      },
+      photoUrl: "/rushikesh.jpeg"
+    }
+  ],
+  
+  "Finance": [
+    {
+      id: 1,
+      name: "Rithend",
+      role: "Finance Head",
+      photoUrl: "/rithend.jpg"
+    }
+  ],
+    
+  "Social Media": [
+    {
+      id: 1,
+      name: "Lokesh",
+      role: "Social Media Head",
+      photoUrl: "/lokesh.jpg"
     },
+    {
+      id: 2,
+      name: "Maheen",
+      role: "Social Media Co-Head",
+      photoUrl: "/maheen.jpeg"
+    }
   ],
   "PR Commitee": [
     {
-      id: 4,
-      name: "Neha ",
+      id: 1,
+      name: "Neha",
       role: "PR Head",
-      photoUrl: "/neha.jpg",
-      videoUrl: "/videos/team-member-4.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
+      photoUrl: "/neha.jpg"
     }
   ],
-  "Creatives ": [
+  
+  "Creatives": [
     {
-      id: 6,
+      id: 1,
       name: "Sevita",
       role: "Creatives Head",
-      photoUrl: "/Sevita.jpg",
-      videoUrl: "/videos/team-member-6.mp4",
-      socialLinks: {
-        linkedin: "https://linkedin.com",
-        github: "https://github.com",
-      },
+      photoUrl: "/Sevita.jpg"
     },
-   
-   
+    {
+      id: 2,
+      name: "Sushmita",
+      role: "Creatives Co-Head",
+      photoUrl: "/sushmita.jpeg"
+    }
   ],
+  
   "Cultural Committee": [
     {
-      id: 9,
+      id: 1,
       name: "Hamza",
       role: "Cultural Head",
-      photoUrl: "/hamza.jpg",
-      videoUrl: "/videos/team-member-9.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
+      photoUrl: "/hamza.jpg"
     },
     {
-      id: 9,
+      id: 2,
       name: "Krishna",
       role: "Cultural Co-Head",
-      photoUrl: "/krishna.jpeg",
-      videoUrl: "/videos/team-member-9.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
+      photoUrl: "/krishna.jpeg"
     }
   ],
-  "Finance": [
-    {
-      id: 9,
-      name: "Rithend ",
-      role: "Finance Head",
-      photoUrl: "/rithend.jpg",
-      videoUrl: "/videos/team-member-9.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
-    }
-  ],
+  
   "Hospitality": [
     {
-      id: 9,
+      id: 1,
       name: "Jesal",
       role: "Hospitality Head",
-      photoUrl: "/jesal.jpg",
-      videoUrl: "/videos/team-member-9.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
-    }
-  ]
-  ,
-  "Logistics": [
-    {
-      id: 9,
-      name: "Jeffrin",
-      role: "Logistics Head",
-      photoUrl: "/jefff.jpg",
-      videoUrl: "/videos/team-member-9.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
+      photoUrl: "/jesal.jpg"
     }
   ],
+  
+  "Logistics": [
+    {
+      id: 1,
+      name: "Jeffrin",
+      role: "Logistics Head",
+      photoUrl: "/jefff.jpg"
+    }
+  ],
+  
   "Security": [
     {
-      id: 9,
+      id: 1,
       name: "Vishwajeet",
       role: "Security Head",
-      photoUrl: "/vishwajeet.jpg",
-      videoUrl: "/videos/team-member-9.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
+      photoUrl: "/vishwajeet.jpg"
     }
-  ]
-  ,
-  "Social Media": [
-    {
-      id: 9,
-      name: "Lokesh",
-      role: "Social Media Head",
-      photoUrl: "/lokesh.jpg",
-      videoUrl: "/videos/team-member-9.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
-    }
-  ]
-  ,
+  ],
+  
   "Sports Commitee": [
     {
-      id: 9,
+      id: 1,
       name: "Durvankur",
       role: "Sports Committee Head",
-      photoUrl: "/durvankur.JPG",
-      videoUrl: "/videos/team-member-9.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
+      photoUrl: "/durvankur.JPG"
     }
-  ]
-  ,
+  ],
+  
   "Coverage": [
     {
-      id: 9,
+      id: 1,
       name: "Fouzan",
       role: "Coverage Head",
-      photoUrl: "/fouzan.jpg",
-      videoUrl: "/videos/team-member-9.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
+      photoUrl: "/fouzan.jpg"
     }
-  ]
-  ,
+  ],
+  
   "Technical Team": [
     {
       id: 1,
       name: "Rein",
       role: "Team Lead",
-      photoUrl: "/.jpeg",
-      videoUrl: "/videos/team-member-9.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
-      
+      photoUrl: "/rein.jpeg"
     },
-    ///Other Tech team members
-    
-    
-  ]
-
-  ,
-  "Developer Team": [
+    {
+      id: 2,
+      name: "Aditya",
+      role: "Team Lead",
+      photoUrl: "/aditya.jpeg"
+    }
+  ],
+  
+  "Development Team": [
     {
       id: 1,
       name: "Dinesh",
       role: "Team Lead",
-      photoUrl: "/dinesh.jpeg",
-      videoUrl: "/videos/team-member-9.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
-      
+      photoUrl: "/dinesh.jpeg"
     },
     {
       id: 2,
-      name: "sahil",
+      name: "Sachin",
       role: "Team Member",
-      photoUrl: "/sahil.jpeg",
-      videoUrl: "/videos/team-member-9.mp4",
-      socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://linkedin.com",
-      },
-      
+      photoUrl: "/sachin.JPG"
+    },
+    {
+      id: 3,
+      name: "Mohan",
+      role: "Team Member",
+      photoUrl: "/mohan.jpeg"
+    },
+    {
+      id: 4,
+      name: "Sumit",
+      role: "Team Member",
+      photoUrl: "/sumit.jpg"
+    },
+    {
+      id: 5,
+      name: "Sahil",
+      role: "Team Member",
+      photoUrl: "/sahil.jpeg"
     }
-    ///Other development team members
-
-    
   ]
-
 }
 
-const TeamMemberCard = ({ member ,index}) => {
+const TeamMemberCard = ({ member, index }) => {
   const [isHovering, setIsHovering] = useState(false)
-  const videoRef = useRef(null)
-  const playPromiseRef = useRef(null)
-  
-  // Preload the video when component mounts
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.load()
-    }
-  }, [])
-  
-  // Handle hover state with proper promise handling
-  const handleMouseEnter = () => {
-    setIsHovering(true)
-    if (videoRef.current) {
-      videoRef.current.currentTime = 0
-      
-      // Store the play promise so we can check its state before pausing
-      const playPromise = videoRef.current.play()
-      
-      // Modern browsers return a promise from play()
-      if (playPromise !== undefined) {
-        playPromiseRef.current = playPromise
-        
-        // Handle any errors that might occur during play
-        playPromise.catch(error => {
-          console.error("Video play error:", error)
-        })
-      }
-    }
-  }
-  
-  const handleMouseLeave = () => {
-    setIsHovering(false)
-    
-    if (videoRef.current) {
-      // Check if there's a pending play promise
-      if (playPromiseRef.current) {
-        // Wait for the play promise to resolve before pausing
-        playPromiseRef.current
-          .then(() => {
-            // Only pause if the video is still playing
-            if (videoRef.current && !videoRef.current.paused) {
-              videoRef.current.pause()
-            }
-          })
-          .catch(error => {
-            // Handle any errors
-            console.error("Error handling play promise:", error)
-          })
-          .finally(() => {
-            // Clear the promise reference
-            playPromiseRef.current = null
-          })
-      } else {
-        // If there's no pending promise, we can safely pause
-        videoRef.current.pause()
-      }
-    }
-  }
 
   return (
     <div
-      className={`group relative animate-on-scroll fade-up-delay-${index % 5} `}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      className={`group relative animate-on-scroll fade-up-delay-${index % 5}`}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
     >
-      <div className="relative w-full aspect-square overflow-hidden rounded-full border-4 border-cyan-500/30 transition-all duration-300 group-hover:border-cyan-400 group-hover:shadow-[0_0_25px_rgba(6,182,212,0.5)]">
-        {/* Static Image */}
-        <div className={`absolute inset-0 transition-opacity duration-300 ${isHovering ? "opacity-0" : "opacity-100"}`}>
-          <img
-            src={member.photoUrl || "/placeholder-400x400.jpg"}
-            alt={member.name}
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <div className="relative w-full max-w-[325px] mx-auto aspect-square overflow-hidden rounded-full border-2 border-cyan-500/30 transition-all duration-300 group-hover:border-cyan-400">
+        {/* Main Image */}
+        <img
+          src={member.photoUrl || "/placeholder-400x400.jpg"}
+          alt={member.name}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
 
-        {/* Video that plays on hover */}
-        <div className={`absolute inset-0 transition-opacity duration-300 ${isHovering ? "opacity-100" : "opacity-0"}`}>
-          <video ref={videoRef} muted playsInline loop className="w-full h-full object-cover">
-            <source src={member.videoUrl} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        {/* Futuristic overlay effect */}
+        {/* Minimal hover overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-        {/* Scan line effect */}
-        <div className="absolute inset-0 bg-scan-lines opacity-20 mix-blend-overlay pointer-events-none"></div>
+        {/* Simple cyan border glow on hover */}
+        <div className="absolute inset-0 rounded-full border border-cyan-400/0 group-hover:border-cyan-400/70 transition-colors duration-300"></div>
       </div>
 
-      {/* Member info with futuristic styling */}
+      {/* Member info with minimal styling */}
       <div className="mt-4 text-center">
         <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300">
           {member.name}
         </h3>
         <p className="text-gray-400">{member.role}</p>
 
-        
+      
       </div>
     </div>
   )
 }
 
-// Committee section component
 const CommitteeSection = ({ title, members, index }) => {
-  // Different animation styles based on index
+ 
   const animationClasses = [
-    "fade-up", // First section fades up
-    "fade-right", // Second section fades from right
-    "fade-left", // Third section fades from left
-    "fade-up-scale", // Fourth section fades up and scales
+    "fade-up",
+    "fade-right", 
+    "fade-left", 
+    "fade-up-scale",
   ]
 
   const animationClass = animationClasses[index % animationClasses.length]
 
   return (
     <div className={`mb-24 animate-on-scroll ${animationClass}`}>
-      <div className="relative mb-12">
-        {/* Futuristic committee heading with decorative elements */}
-        <h2 className="text-3xl font-bold  text-center relative z-10 text-cyan-400">{title}</h2>
+      <div className="relative mb-12 pb-2 text-center">
+       
+        <h2 className="text-3xl font-bold text-cyan-400 mb-2">{title}</h2>
 
+        
+        <div className="inline-block w-24 h-0.5 bg-cyan-500 relative">
+          <div className="absolute inset-0 bg-cyan-400 blur-sm opacity-50"></div>
+        </div>
       </div>
 
-      {/* Team members grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+     
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
         {members.map((member, idx) => (
           <TeamMemberCard key={member.id} member={member} index={idx} />
         ))}
@@ -398,10 +263,7 @@ const CommitteeSection = ({ title, members, index }) => {
 export default function TeamMembers() {
   return (
     <div>
-      {/* Committee navigation */}
-      
 
-      {/* Committee sections */}
       {Object.entries(teamData).map(([committee, members], index) => (
         <div key={committee} id={committee.toLowerCase().replace(/\s+/g, "-")}>
           <CommitteeSection title={committee} members={members} index={index} />
