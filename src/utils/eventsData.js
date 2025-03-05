@@ -586,7 +586,7 @@ export const eventData = [
             "Runs will be awarded for byes, leg byes, and overthrows.",
             "The batsman must keep at least one foot inside the batting crease.",
             "The organizing committee reserves the right to make changes to the tournament or rules.",
-            "If the participant not present in the alloted time they will be disqualified, At least 2 players from the team should be present to start the game.",
+            "If the teams do not report by time it will lead to disqualification.At least 2 players from the team should be present to start the game.",
           ],
         },
       },
