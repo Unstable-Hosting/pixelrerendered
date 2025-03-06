@@ -37,7 +37,7 @@ export const eventData = [
           game: [
             "The game has a 45-minute time limit.",
             "Teams must solve puzzles in the correct sequence to progress.",
-            "Volunteers may provide limited guidance but will not reveal solutions.",
+            "Volunteers may provide limited gdance but will not reveal solutions.",
             "Any attempt to cheat or break the rules will result in disqualification.",
           ],
           winningCriteria: [
@@ -204,7 +204,7 @@ export const eventData = [
         entryFee: "₹50 per team",
         prizes: "Certificates",
         description:
-          "Teams debug code in a relay format, passing progress to the next member.",
+          "Participants will be given a design template and redesign the template creatively. Best design will be selected by our judge",
         mode: "Offline",
         type: "Team (3 members)",
         prizeMoney: { first: "exciting prize to be announced" },
