@@ -204,7 +204,8 @@ export const eventData = [
         entryFee: "₹50 per team",
         prizes: "Certificates",
         description:
-          "Participants will be given a design template and redesign the template creatively. Best design will be selected by our judge",
+          "Participants will be given a design template and redesign the template creatively. Best design will be selected by our judge
+          dimesh  the developer",
         mode: "Offline",
         type: "Team (3 members)",
         prizeMoney: { first: "exciting prize to be announced" },
