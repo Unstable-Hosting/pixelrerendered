@@ -621,7 +621,7 @@ export const eventData = [
             "Fouls include handball, pushing, tackling from behind, etc.",
             "Yellow card: 1-minute suspension for the player.",
             "Red card: Player sent off, and the team plays with 2 players.",
-            "If a team with 3 players and no substitute get 2 red cards, the team disqualifies",
+            "If a team with 3 players and no substitute gets 2 red card, the team disqualifies",
             "Teams must report 15 minutes before their match.",
             "If the teams do not report on time, it would lead to disqualification.",
             "At least two players from the team must be present to start the game.",
