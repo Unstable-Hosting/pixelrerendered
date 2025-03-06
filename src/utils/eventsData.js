@@ -796,7 +796,7 @@ export const eventData = [
         date: "7th March",
         venue: "E-Sports Arena",
         participants: "Teams of 4 players",
-        entryFee: "₹200 per team",
+        entryFee: "Free",
         prizes: "Trophies and Certificates for top teams",
         description:
           "Competitive shooting games with Battle Royale or objective-based matches.",
