@@ -1,14 +1,22 @@
 // import React from 'react';
 import "../../css/SponsorsCarousel.css";
+import Dwariks from "../../assets/Dwariks.jpg";
+import Construction from "../../assets/Construction.jpg";
+import Upgrad from "../../assets/Upgrad.jpg";
+import Technovation from "../../assets/Technovation.jpg";
+import Pizza from "../../assets/Pizza.jpg";
 
 const SponsorsCarousel = () => {
   const sponsors = [
-    { id: 1, image: "sponsor1.png", name: "Sponsor 1" },
-    { id: 2, image: "sponsor2.png", name: "Sponsor 2" },
-    { id: 3, image: "sponsor3.png", name: "Sponsor 3" },
-    { id: 4, image: "sponsor4.png", name: "Sponsor 4" },
-    { id: 5, image: "sponsor5.png", name: "Sponsor 5" },
-    // Add more sponsors as needed
+    { id: 1, image: Dwariks, name: "Dwarika" },
+    { id: 2, image: Construction, name: "Satyam Enterprises" },
+    { id: 3, image: Upgrad, name: "Upgrad" },
+    // { id: 4, image: "sponsor4.png", name: "Krafton" },
+    // { id: 5, image: "sponsor5.png", name: "Suyash Construction" },
+    // { id: 5, image: "sponsor5.png", name: "Pro Gamers Cafe" },
+    { id: 4, image: Technovation, name: "Netweaver Technovations Pvt. Ltd." },
+    { id: 5, image: Pizza, name: "Happy Town Pizza" },
+    // { id: 5, image: "sponsor5.png", name: "S Delight Cafe" }
   ];
 
   // Create multiple copies for a seamless loop
