@@ -5,31 +5,31 @@ const teamData = {
     {
       id: 1,
       name: "Poorva",
-      role: "Event Head",
+      role: "Core",
       photoUrl: "/poorva.jpeg"
     },
     {
       id: 2,
-      name: "Velvighnesh",
-      role: "Event Co-Head",
+      name: "Velvignesh",
+      role: "Core",
       photoUrl: "/velvi.jpg"
     },
     {
       id: 3,
       name: "Janani",
-      role: "Core member",
+      role: "Core",
       photoUrl: "/janani.jpg"
     },
     {
       id: 4,
       name: "Ankur",
-      role: "Event Head (Student Council Head)",
+      role: "Core",
       photoUrl: "/ankur.jpg"
     },
     {
       id: 5,
       name: "Rushikesh",
-      role: "Commitee Member",
+      role: "Core",
       photoUrl: "/rushikesh.jpeg"
     }
   ],
