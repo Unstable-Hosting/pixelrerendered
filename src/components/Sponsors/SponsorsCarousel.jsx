@@ -3,7 +3,7 @@ import "../../css/SponsorsCarousel.css";
 import Dwariks from "../../assets/Dwariks.jpg";
 import Construction from "../../assets/Construction.jpg";
 import Upgrad from "../../assets/Upgrad.jpg";
-import Technovation from "../../assets/Technovation.jpg";
+import Technovation from "../../assets/technovation.jpg";
 import Pizza from "../../assets/Pizza.jpg";
 
 const SponsorsCarousel = () => {
