@@ -220,8 +220,7 @@ const TeamMemberCard = ({ member, index }) => {
           {member.name}
         </h3>
         <p className="text-gray-400">{member.role}</p>
-
-      
+{isHovering && <p className="text-sm text-gray-300">More details coming soon...</p>}
       </div>
     </div>
   )
