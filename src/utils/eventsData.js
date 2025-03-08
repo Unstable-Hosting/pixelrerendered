@@ -368,18 +368,18 @@ export const eventData = [
       {
         name: "Pixel's Got Vocal",
         registrationLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSduVsWcqyVmGEWgxZjr_5jO_989sKW6V5fgZfia38CV-PvoWg/viewform?usp=header",
+          "#",
         time: "3-5 minutes per performance",
         date: "8th March",
         venue: "Stage - Main Parking Area",
         participants: "Single ",
-        entryFee: "₹200 per participant",
-        prizes: "Trophy and Certificates for top performers",
+        entryFee: "For Registration go to registration desk",
+        prizes: "To be announced",
         description:
           "A high-energy competition featuring various performing arts.",
         mode: "Online/Offline",
         type: "Solo ",
-        prizeMoney: { first: "₹1000 per category" },
+        prizeMoney: { first: "To be announced" },
         minimumParticipation: "20 participants",
         rules: {
           general: [
@@ -401,18 +401,18 @@ export const eventData = [
       {
         name: "Battle of Bands",
         registrationLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSdg40qAK2I0-z0AgWEMi0UVcsm9G6H-I0nojKMCcB_IdLChzw/viewform?usp=header",
+          "#",
         time: "6 minutes per act",
         date: "7th March",
         venue: "Stage - Main Parking Area",
         participants: "Group",
-        entryFee: "₹500",
-        prizes: "Certificates for top 3 performers",
+        entryFee: "For Registration go to registration desk",
+        prizes: "To be announced",
         description:
           "An electrifying showdown of talent, energy, and music! Bands will compete to own the stage and win the ultimate title. Who will steal the spotlight? Let the battle begin! 🔥🎶",
         mode: "Offline",
         type: "Team",
-        prizeMoney: { first: "₹2500" },
+        prizeMoney: { first: "To be announced" },
         minimumParticipation: "5 Teams",
         rules: {
           general: [
@@ -436,18 +436,18 @@ export const eventData = [
       {
         name: "Dil Dhadakne Do",
         registrationLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLScXYQE9YmjpXM92rA5BGXQeITBConfJ_qOf6Z-ldhxTsFd__w/viewform?usp=header",
+          "#",
         time: "30-45 minutes",
         date: "8th March",
         venue: "Stage - Main Parking Area",
         participants: "Single/Group",
-        entryFee: "Solo-200/Group-500",
+        entryFee: "For Registration go to registration desk",
         prizes: "Certificates for top 3 photos",
         description:
           "Participants click photographs on campus and explain the story behind their best picture.",
         mode: "Offline",
         type: "Solo/Group",
-        prizeMoney: { first: "Solo-1000/Group-2500" },
+        prizeMoney: { first: "To be announced" },
         minimumParticipation: "Not specified",
         rules: {
           game: [
@@ -480,18 +480,18 @@ export const eventData = [
       {
         name: "Fashion Show",
         registrationLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLScDsr5viMHLeUfNOXSwZYGbisOCX9YpSWNo3IOejBteoqZVYw/viewform?usp=header",
+          "#",
         time: "30-45 minutes",
         date: "8th March",
         venue: "Stage - Main Parking Area",
         participants: "Teams of 3-4",
-        entryFee: "₹100 per participant",
+        entryFee: "For Registration go to registration desk",
         prizes: "Certificates for winners",
         description:
           "Inspired by game shows, participants complete challenges like singing lyrics or trivia to avoid elimination.",
         mode: "Offline",
         type: "Group",
-        prizeMoney: { first: "₹3000", second: "1500" },
+        prizeMoney: { first: "To be announced"},
         minimumParticipation: "5 participants",
         rules: {
           general: [
@@ -515,18 +515,18 @@ export const eventData = [
       {
         name: "War of DJs",
         registrationLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSednLA14INPWlhKybvl3GoOSH_V5TTGnTRnk_3igLyf1xVyAg/viewform?usp=header",
+          "#",
         time: "10 minutes per performance",
         date: "7th March",
         venue: "Stage - Main Parking Area",
         participants: "Single",
-        entryFee: "₹500",
+        entryFee: "For Registration go to registration desk",
         prizes: "Trophy and Certificates for top DJs",
         description:
           "DJs showcase mixing skills and engage the audience with creative transitions and live mixes.",
         mode: "Offline",
         type: "Solo",
-        prizeMoney: { first: "₹2500" },
+        prizeMoney: { first: "To be announced" },
         minimumParticipation: "5 participants",
         rules: {
           general: [
