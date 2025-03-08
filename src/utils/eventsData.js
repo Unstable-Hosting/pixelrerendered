@@ -401,7 +401,7 @@ export const eventData = [
       {
         name: "Battle of Bands",
         registrationLink:
-          "#",
+          " ",
         time: "6 minutes per act",
         date: "7th March",
         venue: "Stage - Main Parking Area",
@@ -436,7 +436,7 @@ export const eventData = [
       {
         name: "Dil Dhadakne Do",
         registrationLink:
-          "#",
+          " ",
         time: "30-45 minutes",
         date: "8th March",
         venue: "Stage - Main Parking Area",
@@ -480,7 +480,7 @@ export const eventData = [
       {
         name: "Fashion Show",
         registrationLink:
-          "#",
+          " ",
         time: "30-45 minutes",
         date: "8th March",
         venue: "Stage - Main Parking Area",
@@ -515,7 +515,7 @@ export const eventData = [
       {
         name: "War of DJs",
         registrationLink:
-          "#",
+          " ",
         time: "10 minutes per performance",
         date: "7th March",
         venue: "Stage - Main Parking Area",
