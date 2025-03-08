@@ -368,7 +368,7 @@ export const eventData = [
       {
         name: "Pixel's Got Vocal",
         registrationLink:
-          "/",
+          "",
         time: "3-5 minutes per performance",
         date: "8th March",
         venue: "Stage - Main Parking Area",
