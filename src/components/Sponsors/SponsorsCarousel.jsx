@@ -5,7 +5,7 @@ import Construction from "../../assets/Construction.jpg";
 import Upgrad from "../../assets/Upgrad.jpg";
 import Technovation from "../../assets/technovation.jpg";
 import Pizza from "../../assets/Pizza.png";
-import Krafton from "../../assets/Krafton.png";
+import Krafton from "../../assets/krafton.png";
 
 const SponsorsCarousel = () => {
   const sponsors = [
