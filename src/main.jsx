@@ -6,7 +6,7 @@ import App from "./App.jsx";
 import LandingPage from "./pages/LandingPage";
 import EventInfo from "./components/DynamicEventsPage/EventInfo";
 import DynamicEventsPage from "./components/DynamicEventsPage/DynamicEventsPage";
-import TeamMembers from "./components/MeetTheTeam/team-members.jsx";
+// import TeamMembers from "./components/MeetTheTeam/team-members.jsx";
 import TeamPage from "./components/MeetTheTeam/teampage.jsx";
 // import EventsPage from "./pages/EventsPage.jsx";
 

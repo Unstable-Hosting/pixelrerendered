@@ -68,7 +68,7 @@ const DynamicEventsPage = () => {
               className="participate-button"
               onClick={() => handleParticipateClick(detail.name)}
             >
-              Participate Now
+              Event Details
             </button>
           </div>
         ))}

@@ -268,8 +268,7 @@ export const eventData = [
         minimumParticipation: "1",
         rules: {
           game: [
-            "Rule 1",
-            "Rule 2",
+            "Rules to be revealed on the spot.",
             // other rules...
           ],
         },

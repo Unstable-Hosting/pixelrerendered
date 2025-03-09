@@ -31,12 +31,12 @@ const EventInfo = () => {
       </div>
     );
   }
-
-  const handleRegistration = () => {
-    if (eventDetails.registrationLink) {
-      window.open(eventDetails.registrationLink, '_blank');
-    }
-  };
+// Onclick function -- Redirect to Google Forms
+  // const handleRegistration = () => {
+  //   if (eventDetails.registrationLink) {
+  //     window.open(eventDetails.registrationLink, '_blank');
+  //   }
+  // };
 
   return (
     <div className="event-info-page">
@@ -178,8 +178,8 @@ const EventInfo = () => {
           )}
         </div>
 
-        <button className="register-button" onClick={handleRegistration}>
-          Register Now
+        <button className="register-button" >
+          Registrations Closed
         </button>
       </div>
     </div>

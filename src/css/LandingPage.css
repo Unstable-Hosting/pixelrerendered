@@ -307,6 +307,10 @@
     gap: 1rem;
     padding: 1.5rem 0;
   }
+  .Hero-Section {
+    padding: 0rem 0 0 0;
+    width: 140%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -314,6 +318,10 @@
     gap: 0.5rem;
     padding: 1rem 0;
     width: 90%;
+  }
+  .Hero-Section {
+    padding: 0rem 0 0 0;
+    width: 140%;
   }
 }
 
@@ -430,7 +438,7 @@
     margin-top: 5rem; /* Fixed margin for very small heights */
     max-height: 20vh; /* Reduce maximum height further */
   }
-  .main-content{
+  .main-content {
     min-height: 105vh;
   }
 }
