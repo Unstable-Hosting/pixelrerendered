@@ -46,7 +46,7 @@ const PreEvent = () => {
       style={{ backgroundImage: `url(${bgGif})` }}
     >
       <audio ref={audioRef} loop autoPlay muted>
-        <source src={rickRollAudio} type="audio/mpeg" />
+        {/* <source src={rickRollAudio} type="audio/mpeg" /> */}
         Your browser does not support the audio element.
       </audio>
       <div className="logo">
