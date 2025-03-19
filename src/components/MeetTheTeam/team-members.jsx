@@ -144,7 +144,7 @@ const teamData = {
   "Technical Team": [
     {
       id: 1,
-      name: "Rein",
+      name: "Reiine",
       role: "Team Lead",
       photoUrl: "/rein.jpeg",
     },
